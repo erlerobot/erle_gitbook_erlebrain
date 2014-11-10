@@ -2,7 +2,7 @@
 
 ### Installing the tools:
 ````bash
-sudo apt-get install gawk gcc-arm-linux-gnueabihf
+sudo apt-get install gawk gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf
 ```
 
 ### Downloading the code
