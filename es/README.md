@@ -1,6 +1,6 @@
-#Introducción
+#Erle-Brain
 
-**Erle-Brain**es un autopiloto para drones basado en *open hardware* y *open software*. El sistema está compuesto por una BeagleBone Black y el PixHawk Fire Cape, tiene flaseada una imagen Debian, ROS preinstalado y el último código listo para volar.
+**Erle-Brain** es un autopiloto para drones basado en *open hardware* y *open software*. El sistema está compuesto por una BeagleBone Black y el PixHawk Fire Cape, tiene flaseada una imagen Debian, ROS preinstalado y el último código listo para volar.
 
 El **PixHawk Fire Cape (PXF)** es una placa hija de la placa de desarrollo **BeagleBone Black (BBB)** que permite crear un autopiloto completo basado en Linux para drones, rover y aviones. La combinación de la BBB y la PXF permite volar quadricopteros, aviones o incluso construir rovers.
 
