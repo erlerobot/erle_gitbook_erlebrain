@@ -1,16 +1,10 @@
 #Erle-brain
 
-Erle-brain is an open hardware and open source Linux-based autopilot for drones. It consists of a BeagleBone Black and a PixHawk Fire cape and it comes with a Debian image flashed, ROS preinstalled and the latest ready to fly code ;).
+Erle-brain is an open hardware and open source Linux-based autopilot for drones. It consists of a BeagleBone Black and a PixHawk Fire Cape and it comes with a Debian image flashed, ROS preinstalled and the latest ready to fly code ;).
 
-The **PixHawk Fire Cape (PXF)** is a daugther board
-for the **BeagleBone Black (BBB)** development board
-that allows to create a fully functional Linux autopi-
-lot for drones. The combination of BBB and PXF
-allows to a Linux computer that flies either through
-copters, planes or even building rovers that can nav-
-igate around.
+The **PixHawk Fire Cape (PXF)** is a daugther board for the **BeagleBone Black (BBB)** development board that allows to create a fully functional Linux autopilot for drones. The combination of BBB and PXF allows to a Linux computer that flies either through copters, planes or even building rovers that can navigate around.
 
-![brain](../img/brain.jpg)
+![erle-brain](https://erlerobotics.com/blog/wp-content/uploads/2014/10/bbb_pxf_resize.png)
 
 The main characteristics are:
 - Debian Wheezy 7.5
@@ -31,8 +25,7 @@ The main characteristics are:
 
 To acquire the board visit [erlerobotics store](https://erlerobotics.com/blog/product/erle-brain/).
 
-**NOTE**: **The PixHawk Fire Cape is still in development thereby some of the systems included might not have full
-support at the time of shipment.**
+**NOTE**: **The PixHawk Fire Cape is still in development thereby some of the systems included might not have full support at the time of shipment.**
 
 ##About
 For years we've been working in the robotics field, particularly with drones. We have passed through different Universities and research centers and in all these places we actually found that most of the **drones are black boxes** (check out our [60s pitch](https://www.youtube.com/watch?v=tKAqjyXaC18)). Not meant to be used for learning, research. The software they use is in most of the cases unknown, closed source or *not documented*.
@@ -45,7 +38,6 @@ We are coming up with an answer to all these questions, our technology at [Erle 
 Inspired by the BeagleBone development board, we have designed a small computer with about 36+ sensors, plenty of I/O and processing power for real-time analysis. Erle is the enabling technology for the next generation of aerial and terrestrial robots that will be used in cities solving tasks such as surveillance, enviromental monitoring or even providing aid at catastrophes.
 
 Our small-size Linux computer is bringing robotics to the people and businesses.
-
 
 ##License
 Unless specified, this content is licensed under the Creative Commons Attribution-NonComercial-Share Alike 3.0 Unported License. To view a copy of this license, visit [http://creativecommons.org/licenses/by-sa/3.0/](http://creativecommons.org/licenses/by-sa/3.0/) or send a letter to *Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA*.
