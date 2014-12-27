@@ -41,48 +41,64 @@ root        71   0  19      - [kworker/u:2]
 root        74   0  19      - [mmcqd/1]
 root        75   0  19      - [mmcqd/1boot0]
 root        76   0  19      - [mmcqd/1boot1]
-root       131 -20  39      - [kworker/0:1H]
-root       179   0  19      - [jbd2/mmcblk0p2-]
-root       180 -20  39      - [ext4-dio-unwrit]
-root       212   0  19      - /lib/systemd/systemd-journald
-root       224   0  19      - /sbin/udevd
-root       308   0  19      - /sbin/udevd
-root       309   0  19      - /sbin/udevd
-avahi      589   0  19      - avahi-daemon: running [beaglebone.local]
-101        593   0  19      - /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --
-root       596   0  19      - /usr/sbin/acpid
-root       600   0  19      - /usr/bin/node autorun.js
-root       601   0  19      - /sbin/wpa_supplicant -u -s -O /var/run/wpa_supplicant
-root       604   0  19      - /lib/systemd/systemd-logind
-root       610   0  19      - /usr/sbin/rsyslogd -n -c5
-root       619   0  19      - /bin/bash /etc/init.d/apm4-startup.sh
-root       641   0  19      - /sbin/agetty tty1 38400
-root       642   0  19      - /sbin/agetty -s ttyO0 115200 38400 9600
-avahi      661   0  19      - avahi-daemon: chroot helper
-root       699   0  19      - [spi1]
-xrdp       700   0  19      - /usr/sbin/xrdp
-root       708   0  19      - [spi2]
-root       724 -20  39      - [OMAP UART5]
-root       750 -20  39      - [OMAP UART4]
-root       801   0  19      - /usr/sbin/xrdp-sesman
-root       818 -20  39      - [OMAP UART2]
-root       845   0  19      - /usr/sbin/cron
-root       852   0  19      - [RTW_CMD_THREAD]
-root       859   0  19      - /usr/sbin/sshd
-root       871   0  19      - [file-storage]
-root       896   0  19      - /usr/local/bin/hostapd -B -P /var/run/hostapd.pid /etc/hostapd/hostapd.c
-root       941   0  19      - /bin/bash /etc/init.d/apm4-startup.sh
-root       992   -  52     12 ./ArduCopter.elf -A udp:192.168.7.1:6000 -B /dev/ttyO5
-root       993   0  19      - /usr/sbin/udhcpd -S
-root      1001   0  19      - /usr/sbin/udhcpd -S /etc/udhcpd.conf
-root      1026   0  19      - sshd: root@pts/0
-root      1028   0  19      - -bash
-root      1058   0  19      - /sbin/agetty -s ttyGS0 115200 38400 9600
-root      1076   0  19      - [flush-179:0]
-root      1080   0  19      - [kworker/0:2]
-root      1083   0  19      - [kworker/0:0]
-root      1143   0  19      - [kworker/0:1]
-root      1185   0  19      - ps -eo user,pid,nice,pri,rtprio,command
+root       126 -20  39      - [kworker/0:1H]
+root       175   0  19      - [jbd2/mmcblk0p2-]
+root       176 -20  39      - [ext4-dio-unwrit]
+root       207   0  19      - [kworker/0:2]
+root       209   0  19      - /lib/systemd/systemd-journald
+root       221   0  19      - /sbin/udevd
+root       305   0  19      - /sbin/udevd
+root       306   0  19      - /sbin/udevd
+avahi      570   0  19      - avahi-daemon: running [beaglebone.local]
+root       577   0  19      - /usr/sbin/acpid
+101        587   0  19      - /usr/bin/dbus-daemon --system --address=systemd:
+root       590   0  19      - /bin/bash /etc/init.d/apm4-startup.sh
+root       594   0  19      - /sbin/wpa_supplicant -u -s -O /var/run/wpa_suppl
+root       595   0  19      - /usr/bin/node autorun.js
+root       599   0  19      - /lib/systemd/systemd-logind
+root       603   0  19      - /usr/sbin/rsyslogd -n -c5
+root       629   0  19      - /sbin/agetty tty1 38400
+root       631   0  19      - /sbin/agetty -s ttyO0 115200 38400 9600
+avahi      653   0  19      - avahi-daemon: chroot helper
+root       661   0  19      - [spi1]
+root       674   0  19      - [spi2]
+root       686 -20  39      - [OMAP UART5]
+xrdp       691   0  19      - /usr/sbin/xrdp
+root       697 -20  39      - [OMAP UART4]
+root       774   0  19      - /usr/sbin/xrdp-sesman
+root       795 -20  39      - [OMAP UART2]
+root       835   0  19      - /usr/sbin/cron
+root       838   0  19      - [file-storage]
+root       851   0  19      - /usr/sbin/sshd
+root       910   0  19      - /sbin/agetty -s ttyGS0 115200 38400 9600
+root      1020   0  19      - /bin/bash /etc/init.d/apm4-startup.sh
+root      1025   -  52     12 ./ArduCopter.elf -A udp:192.168.7.1:6000 -B /dev
+root      1047   0  19      - sshd: root@pts/0 
+root      1049   0  19      - -bash
+root      1076   0  19      - sshd: root@pts/1 
+root      1078   0  19      - -bash
+root      1109   0  19      - [kworker/0:0]
+root      1110   0  19      - stress --cpu 8 --io 8 --vm 2 --vm-bytes 128M
+root      1111   0  19      - stress --cpu 8 --io 8 --vm 2 --vm-bytes 128M
+root      1112   0  19      - stress --cpu 8 --io 8 --vm 2 --vm-bytes 128M
+root      1113   0  19      - stress --cpu 8 --io 8 --vm 2 --vm-bytes 128M
+root      1114   0  19      - stress --cpu 8 --io 8 --vm 2 --vm-bytes 128M
+root      1115   0  19      - stress --cpu 8 --io 8 --vm 2 --vm-bytes 128M
+root      1116   0  19      - stress --cpu 8 --io 8 --vm 2 --vm-bytes 128M
+root      1117   0  19      - stress --cpu 8 --io 8 --vm 2 --vm-bytes 128M
+root      1118   0  19      - stress --cpu 8 --io 8 --vm 2 --vm-bytes 128M
+root      1119   0  19      - stress --cpu 8 --io 8 --vm 2 --vm-bytes 128M
+root      1120   0  19      - stress --cpu 8 --io 8 --vm 2 --vm-bytes 128M
+root      1121   0  19      - stress --cpu 8 --io 8 --vm 2 --vm-bytes 128M
+root      1122   0  19      - stress --cpu 8 --io 8 --vm 2 --vm-bytes 128M
+root      1123   0  19      - stress --cpu 8 --io 8 --vm 2 --vm-bytes 128M
+root      1124   0  19      - stress --cpu 8 --io 8 --vm 2 --vm-bytes 128M
+root      1125   0  19      - stress --cpu 8 --io 8 --vm 2 --vm-bytes 128M
+root      1126   0  19      - stress --cpu 8 --io 8 --vm 2 --vm-bytes 128M
+root      1127   0  19      - stress --cpu 8 --io 8 --vm 2 --vm-bytes 128M
+root      1128   0  19      - stress --cpu 8 --io 8 --vm 2 --vm-bytes 128M
+root      1129   0  19      - [flush-179:0]
+root      1132   0  19      - ps -eo user,pid,nice,pri,rtprio,command
 
 ```
 
