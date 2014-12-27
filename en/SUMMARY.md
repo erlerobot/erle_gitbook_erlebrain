@@ -10,6 +10,7 @@
    * [Real Time](realtime.md)
        * [Thread Priorities](threadpriorities.md)
        * [Linux kernel](kernel.md)
+       * SCHED_DEBUG
 * [Contact information](contact_information/README.md)
 * [Legal note](legal_note/README.md)
 
