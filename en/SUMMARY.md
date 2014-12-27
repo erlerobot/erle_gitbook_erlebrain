@@ -8,6 +8,7 @@
 * [Hardware](hardware.md)
 * [Software](software.md)
    * [Real Time](realtime.md)
+       * Thread Priorities
 * [Contact information](contact_information/README.md)
 * [Legal note](legal_note/README.md)
 
