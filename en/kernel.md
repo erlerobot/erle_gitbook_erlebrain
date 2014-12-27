@@ -29,7 +29,7 @@ root@beaglebone:~# uptime
 ```
 
 ### Running cyclictests
-Now that we have the processor stressed we use `cyclictests` to measure the latencies:
+Now that we have the processor stressed we use `cyclictests` to measure the latencies (us):
 ```bash
 root@beaglebone:~# cyclictest -t1 -p 80 -n -i 10000 -l 10000
 # /dev/cpu_dma_latency set to 0us
