@@ -4,9 +4,7 @@ Erle-brain is an open hardware and open source Linux-based autopilot for drones.
 
 The **PixHawk Fire Cape (PXF)** is a daugther board for the **BeagleBone Black (BBB)** development board that allows to create a fully functional Linux autopilot for drones. The combination of BBB and PXF allows to a Linux computer that flies either through copters, planes or even building rovers that can navigate around.
 
-![](http://erlerobotics.com/blog/wp-content/uploads/2014/12/IMG_6342.jpg)
-
-![erle-brain]()
+![erle-brain](http://erlerobotics.com/blog/wp-content/uploads/2014/12/IMG_6342.jpg)
 
 The main characteristics are:
 - Debian Wheezy 7.5
@@ -35,7 +33,7 @@ Given these conditions, how are we going to educate the next generations on this
 
 We are coming up with an answer to all these questions, our technology at [Erle Robotics](http://erlerobotics.com) and our drones brain: [Erle-brain](http://erlerobotics.com/blog/tienda/erle-brain).
 
-![erle-brain](http://erlerobotics.com/blog/wp-content/uploads/2014/10/20141029_202223.jpg)
+![erle-brain](http://erlerobotics.com/blog/wp-content/uploads/2014/12/IMG_6329.jpg)
 
 Inspired by the BeagleBone development board, we have designed a small computer with about 36+ sensors, plenty of I/O and processing power for real-time analysis. Erle is the enabling technology for the next generation of aerial and terrestrial robots that will be used in cities solving tasks such as surveillance, enviromental monitoring or even providing aid at catastrophes.
 
