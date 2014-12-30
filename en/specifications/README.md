@@ -1,6 +1,6 @@
 # Specifications
 
-# Electrical specifications
+### Electrical specifications
 
 |  |  |
 |---------------|------------------|
@@ -22,7 +22,18 @@
 ||1 Power brick in|
 ||1 Backup battery conector|
 
-# Mechanical specifications
+#### Power consumption
+
+| MODE | consumption (mA) |
+|------|------------------|
+|Idling @ UBoot | 235 |
+|Kernel Booting (Peak) | 442 |
+|Kernel Idling | 323 |
+|Dongle WiFi creating hotspot | 469 |
+|Autopilot (APM) + ROS | 397 |
+|Autopilot (APM) + ROS + Dongle in hotspot | 569 |
+
+### Mechanical specifications
 
 |  |  |
 |---------------|------------------|
