@@ -35,9 +35,8 @@
 
 ### Mechanical specifications
 
-|  |  |
-|---------------|------------------|
 | **Size** | 85 x 55 cm|
+|---------------|------------------|
 |**Layers**| 6 |
 |**PCB Thickness**| 1.6|
 |**RoHS Compliant**|yes|
