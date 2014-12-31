@@ -12,7 +12,7 @@ While running the autopilot and using:
 ``` bash
 stress --cpu 8 --io 8 --vm 2 --vm-bytes 128M
 ```
-We can see that the load of the system raises up to `17` percent approximately:
+We can see that the load of the system raises up to `17` approximately:
 ```bash
 root@beaglebone:~# uptime
  03:20:20 up 14 min,  3 users,  load average: 17.07, 7.86, 3.21
