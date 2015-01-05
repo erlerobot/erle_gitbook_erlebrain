@@ -6,6 +6,7 @@
    * [Vehiculos](vehicles/README.md)
    * [Referencias](references/README.md)
 * [Hardware](hardware/hardware.md)
+	*[Backup](hardware/backup.md)
 * [Software](software/software.md)
    * [Real Time](software/realtime.md)
        * [SCHED_DEBUG](software/scheddebug.md)
