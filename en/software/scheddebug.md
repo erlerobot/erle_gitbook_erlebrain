@@ -29,5 +29,5 @@ PERF: 3/1000 18775
 
 The first number within these "PERF" printouts show the number of loops that took longer than expected (e.g. if the autopilot is running at 100 Hz then we expect tasks to be completed within 10 ms). 
 
-The second number represents the maximum time a cycle took in miliseconds.
+The second number represents the maximum time a cycle took in milliseconds.
 
