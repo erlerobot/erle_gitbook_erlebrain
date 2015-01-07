@@ -11,3 +11,5 @@ PixHawk Fire Cape being used in a rover
 ![copter](../img/copter.png)
 
 PixHawk Fire Cape being used in a plane
+
+![plane](../img/plane.jpg)
