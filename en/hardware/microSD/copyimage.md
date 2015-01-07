@@ -1,5 +1,7 @@
 #Copy image to microSD card
 
+## Linux
+
 The following steps describe how to **copy an image to the microSD card**. The usually will contain the *bootloader*, the *Linux Kernel* and a *File System* (either Ångström or Ubuntu, others are possible) for the **robot Erle**:
 
    * Fetch the image.
@@ -25,6 +27,7 @@ Alternatively if you have an image of the kind `erlerobot-ubuntu.tar.xz` then yo
 ```
 xz -dkc erlerobot-ubuntu.tar.xz > /dev/sdb
 ```
+
 ## Do it in MacOS
 
 ```

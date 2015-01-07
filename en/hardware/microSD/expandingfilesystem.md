@@ -20,7 +20,7 @@ none            5.0M     0  5.0M   0% /run/lock
 none            122M     0  122M   0% /run/shm
 /dev/mmcblk0p1   48M  9.4M   39M  20% /boot/uboot
 ```
-- To manage a Disk partitions we have to use fdisk command:
+- To manage a Disk partitions we have to use `fdisk command:
 ```
 $fdisk /dev/mmcblk0
 ```
@@ -44,9 +44,9 @@ Disk identifier: 0x00000000
 /dev/mmcblk0p2          100352    15523839     7711744   83  Linux
 ```
 
- - Enter “d” command to delete a partition and mention the partition number as ‘2’  .Entering ‘p‘ again will show that you have deleted /dev/mmcblk0p2
+ - Enter `d` command to delete a partition and mention the partition number as `2` .Entering `p` again will show that you have deleted /dev/mmcblk0p2
 
-   - Now create a new partition by entering ‘n’ then ‘p’ and then ‘2’
+   - Now create a new partition by entering `n` then `p` and then `2`
 
    - n–>new partition
 
@@ -55,23 +55,23 @@ Disk identifier: 0x00000000
    - 2–>partition number
 
 
-- You can enter ‘p‘ again to see that the /dev/mmcblk0p2 has been re-appeared.
+- You can enter `p` again to see that the `/dev/mmcblk0p2` has been re-appeared.
 
-- If everything goes fine enter ‘w’ to commit your changes or if you are finding any error ,Ctrl+z to stop the process.
+- If everything goes fine enter `w` to commit your changes or if you are finding any error, `Ctrl+z` to stop the process.
 
 - Reboot your system.
 ```
 $ reboot
 ```
 
-- After rebooting you need to expand the file system.Enter the command ‘df’ (df–> displays the total space and free space available on your system)
+- After rebooting you need to expand the file system. Enter the command `df` (df–> displays the total space and free space available on your system)
 
 - Then enter the following command to expand the file system. (It take some time to complete)
 ```
 $ resize2fs /dev/mmcblk0p2      
 ```
 
-After completing the process again type ‘df’ to check the space available.Now you can access full space of your SD card. 
+After completing the process again type `df` to check the space available. Now you can access full space of your SD card. 
 
 ### Sources:
 - [Expanding the File System Partition on a SD card in BeagleBone Black](http://blogspot.tenettech.com/?p=2932)
