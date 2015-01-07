@@ -1,4 +1,4 @@
-# Com obtener una conexión serial a través de USB 
+# Como obtener una conexión serial a través de USB 
 
 ### Linux or Mac OS
 
@@ -23,7 +23,7 @@ CCCCC
 
 ### Windows 7
 
-####Instalando los drivers
+#### Instalando los drivers
 - [BONE_D64.exe (64 bits)](http://beagleboard.org/static/beaglebone/latest/Drivers/Windows/BONE_D64.exe) 
 - [BONE_DRV.exe (32 bits)](http://beagleboard.org/static/beaglebone/latest/Drivers/Windows/BONE_DRV.exe)
 

@@ -25,7 +25,7 @@ After that small change, the examples should cross-compile **natively**:
 ```
 make CROSS_COMPILE=""
 ```
-Then, `cd bin`and:
+Then, `cd bin` y:
 ```
 modprobe uio_pruss #load the kernel module
 echo BB-BONE-PRU-01 > /sys/devices/bone_capemgr.8/slots #activate the PRU

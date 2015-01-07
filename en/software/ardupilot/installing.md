@@ -1,3 +1,5 @@
+# Installing
+
 This process will be done using a prebuilt Debian image, the same could be done with a Ubuntu FS.
 
 ###Get Debian running on Erle
@@ -52,7 +54,7 @@ git config --global user.email "your.email@here.com"
 ```
 
 ##### lzop Compression
-The kernel is compressed using lzo. Install the lzop parallel file compressor:
+The kernel is compressed using `lzop`. Install the `lzop` parallel file compressor:
 ```
 apt-get install lzop
 ```

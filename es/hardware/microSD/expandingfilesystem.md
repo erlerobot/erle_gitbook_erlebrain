@@ -1,4 +1,4 @@
-#Expandiendo el sistema de ficheor en la microSD
+#Expandiendo el sistema de ficheros en la microSD
 
 Generalmente los dispotivos de almacenamiento necesitan una estructra que permita al sistema opertativo localizar y crear nuevas ficheros. Esto se hace usando particiones y el sistema de ficheros. Una partición es una sección del sistema de almacenamiento que esta formateado con el sistema de fichero, en el cúal el sistema operativo crea una estructura de directorios. Expandiendo el sistema de ficheros en la microSD se puede utilizar el resto de la memoria para este proposito.
 Los pasos para expandir el sistema de ficheros en una tarjeta microSD externa:
