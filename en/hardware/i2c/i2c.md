@@ -1,4 +1,4 @@
-#Editing How to instantiate I2C devices from the userspace
+#How to instantiate I2C devices from the userspace
 
 > In general, the kernel should know which I2C devices are connected and          
 > what addresses they live at. However, in certain cases, it does not, so a       
@@ -43,7 +43,7 @@
 
 Taken from the [Linux kernel documentation](http://lxr.free-electrons.com/source/Documentation/i2c/instantiating-devices).
 
-Considering this, we could instantiate a sensor (hih6130) connected to i2c-1 and with address 0x27 doing:
+Considering this, we could instantiate a sensor (hih6130) connected to i2c-1 and with address `0x27` doing:
 
 ```
 echo hih6130 0x27 > /sys/bus/i2c/devices/i2c-1/new_device 
