@@ -2,6 +2,8 @@
 
 The expansion headers P8 and P9 are assigned to the following pins:
 
+![PXFpins](../img/pxf_pins.png)
+
 | **Pin** | **Function** |
 |---------|--------------|
 | P8.1 | GND |
