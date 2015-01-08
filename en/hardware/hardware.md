@@ -2,7 +2,7 @@
 
 ###Overview
 
-Below the most relevant features of the robot Erle are pictured in a table:
+Below the most relevant features of the Erle-Brain are pictured in a table:
 
 |    | **Feature** |
 |----|---------|
