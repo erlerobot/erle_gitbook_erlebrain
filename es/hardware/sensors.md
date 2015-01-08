@@ -1,6 +1,6 @@
 #Sensores
 
-A continuación se describen los sensores incluidos en [Erle](http://erlerobot.com):
+A continuación se describen los sensores incluidos en Erle-Brain:
 
 ### Inertial Measurement Units (IMUs)
 

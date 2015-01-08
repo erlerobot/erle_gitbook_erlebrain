@@ -16,9 +16,9 @@ Desde el 10 de octubre del 2006, no hay obligación de aplicar derechos de licen
 SMBus, definido por Intel en 1995, es un subconjunto de I²C que define los protocolos de forma más estricta. Uno de los propósitos de SMBus es promover la robustez e interoperabilidad. En consecuencia, en la actualidad I²C incorpora sistemas de políticas y normas de SMBus, a veces apoyando tanto I²C y SMBus, que sólo requiere la reconfiguración mínima.
 ```
 
-#### I²C en el [robot Erle](http://erlerobot.com)
+#### I²C en Erle Brain
 
-El robot educacional [Erle](http://erlerobot.com) incluye 3 I²C buses disponible bajo `/dev`: `/dev/i2c-0`, `/dev/i2c-1` and `/dev/i2c-2`.
+El robot educacional [Erle](http://erlerobotics.com) incluye 3 I²C buses disponible bajo `/dev`: `/dev/i2c-0`, `/dev/i2c-1` and `/dev/i2c-2`.
 
 ----
 

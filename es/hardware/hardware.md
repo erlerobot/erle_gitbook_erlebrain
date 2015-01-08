@@ -2,7 +2,7 @@
 
 ###Resumen
 
-A continuación se muestran en la tabla las características más relevantes del robot Erle:
+A continuación se muestran en la tabla las características más relevantes de Erle-Brain:
 
 |    | **Feature** |
 |----|---------|
