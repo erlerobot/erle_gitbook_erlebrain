@@ -1,4 +1,4 @@
-#Hardware
+#Erle-Brain Hardware
 
 ###Overview
 
