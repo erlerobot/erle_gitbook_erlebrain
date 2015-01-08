@@ -2,6 +2,13 @@
 
 This process will be done using a prebuilt Debian image, the same could be done with a Ubuntu FS.
 
+- [Get Debian running on Erle](#get-debian-running-on-erle)
+- [Making the rt kernel](#making-the-rt-kernel)
+- [Installing the RT kernel](#installing-the-rt-kernel)
+- [Adjusting the clock](#adjusting-the-clock)
+- [Installing and Making ArduPilot](#installing-and-making-ardupilot)
+- [Sources](#sources)
+
 ###Get Debian running on Erle
 
 - Get a Debian image:

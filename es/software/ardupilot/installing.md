@@ -1,5 +1,12 @@
 # Instalando
 
+- [Corriendo Debian en Erle](#corriendo-debian-en-erle)
+- [Compilando el kernel de tiempo real](#compilando-el-kernel-de-tiempo-real)
+- [Instalando el Kernel de tiempo real](#instalando-el-kernel-de-tiempo-real)
+- [Ajustando el reloj](#ajustando-el-reloj)
+- [Instalado y compilando ArduPilot](#instalado-y-compilando-ardupilot)
+- [Sources](#fuentes)
+
 El proceso se realizar utilizando un imagen de Debian, lo mismo se puede realizar con un sistema de ficheros de Ubuntu.
 
 ### Corriendo Debian en Erle
@@ -8,7 +15,7 @@ El proceso se realizar utilizando un imagen de Debian, lo mismo se puede realiza
 wget https://rcn-ee.net/deb/flasher/wheezy/BBB-eMMC-flasher-debian-7.1-2013-10-08.img.xz
 ```
 
-- Verifica la imgen con:
+- Verifica la imagen con:
 ```
 md5sum BBB-eMMC-flasher-debian-7.1-2013-10-08.img.xz
 706322a17e5f2251892ad19bec1e5829  BBB-eMMC-flasher-debian-7.1-2013-10-08.img.xz
@@ -32,9 +39,9 @@ xzcat BBB-eMMC-flasher-debian-7.1-2013-10-08.img.xz | dd of=/dev/sdb bs=1M
 
 - Espera hasta que el flaseo este acabado, desconecta la tarjeta microSD e introducela en **Erle**. Debian debería carga y deberías poder loguearte con *usuario: root* and *contraseña:root*.
 
-### Making the rt kernel
+### Compilando el kernel de tiempo real
 
-#### Prerequisites
+#### Prerequisitos
 
 ----
 
@@ -154,7 +161,7 @@ Linux arm 3.8.13-rt9-00899-g40bdb63 #1 SMP PREEMPT Wed Feb 5 16:34:58 CET 2014 a
 
 -----
 
-### Ajustando el reloh
+### Ajustando el reloj
 Instala `cpufrequtils`:
 ```
 apt-get install cpufrequtils
