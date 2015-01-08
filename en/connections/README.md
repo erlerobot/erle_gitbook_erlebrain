@@ -2,7 +2,7 @@
 
 ###Copter
 
-![rover](../img/ConexionesPXF.png)
+![copter](../img/copter_conexion.png)
 
 ###Rover
 
