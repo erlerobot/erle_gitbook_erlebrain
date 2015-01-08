@@ -1,7 +1,7 @@
 #Sensors
 
 
-Below the sensors included in [Erle's board](http://erlerobot.com) are described:
+Below the sensors included in Erle-Brain are described:
 
 ### Inertial Measurement Units (IMUs)
 
