@@ -1,9 +1,10 @@
 #BeagleBone Black
 
-[BeagleBone Black](http://beagleboard.org/black) es un ordenador de hardware abierto y de bajo coste diseñado por desarroladores y aficionados. Esta placa ha sido diseñada por la organización de **BeagleBoard**. Es una organización sin ánimo de lucro y tiene un gran comunidad.
+[BeagleBone Black](http://beagleboard.org/black) is an open-hardware low-cost board that is designed for developers and hobbyists. This board has been developed by the **BeagleBoard** organization. This corporation is non-profit and community supported.
 
 ![BeagleBone](http://www.ti.com/ww/en/beagleboard/product_detail_black_lg.jpg)
 
-Esta placa especificamente se ha hecho muy popular gracias a su bajo coste (~35€/~55$) y sus altas prestaciones: puedes arrancar Linux (Debian , Ubuntu or Angström) en unos 10 segundos gracias a su procesador Cortex-A8, es capaz de funcionar como un ordenador, tiene dos microcontroladores PRU de tiempo real y amplicas opciones de conectividad (USB, Ethernet, HDMI, SPI, I2C, GPIOs, ...) y una larga lista de capas disponibles.
+This specific board has become very popular due to its low cost (~35€/~55$) and high features: it can boot Linux (Debian, Ubuntu, Angström distros) in 10 seconds thanks to the Cortex-A8 processor, is able to work as a stand-alone computer, it has real-time 2x PRU microcontrollers, its large connectivity options (USB, Ethernet, HDMI, SPI, I2C, GPIOs, ...) and large amount of capes available.
 
-Si quieres más información puedes revisar el [manual de referencia](http://www.adafruit.com/datasheets/BBB_SRM.pdf)
+
+If you would like to look more info up, you could check the [reference manual](http://www.adafruit.com/datasheets/BBB_SRM.pdf)
