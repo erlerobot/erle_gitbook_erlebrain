@@ -11,6 +11,6 @@ The [Power Module](https://erlerobotics.com/blog/product/power_mod/) incorporate
 | **Name** | **Values** |
 |----------|------------|
 |*Max Input Voltage* | 18V |
-|*Max Currebt Sensing* | 90A |
+|*Max Current Sensing* | 90A |
 |*Switching regulator outputs* | 5.3V at 2.25A max |
 
