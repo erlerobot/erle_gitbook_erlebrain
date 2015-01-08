@@ -33,7 +33,7 @@
        * [Kernel de Linux](software/kernel.md)
    * [Problemas con el reloj](software/clock.md)
    * [Instalando Ardupilot](software/ardupilot/installing.md)
-   * [Enalces de Ardupilot](software/ardupilot/installing.md)
+   * [Enalces de Ardupilot](software/ardupilot/links.md)
    * [PRU](software/ardupilot/links.md)
 * [Información de contacto](contact_information/README.md)
 * [Nota legal](legal_note/README.md)
