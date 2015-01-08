@@ -10,7 +10,7 @@ La señal `VDD_ADC` se proporciona a través de la cabecera de expansión, pero 
 
 ###Licencia
 
-Parte del contenido es un derivado de la  *BeagleBone System Reference Manual Rev A6.0.0* bajo licencia *Creative Commons Attribution-Share Alike 3.0 Unported License*. Para ver una copia de esta licencia, visite [http://creativecommons.org/licenses/by-sa/3.0/] (http://creativecommons.org/licenses/by-sa/3.0/) o envíe una carta a * Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, EE.UU. *. 
+Parte del contenido es un derivado de la  *BeagleBone System Reference Manual Rev A6.0.0* bajo licencia *Creative Commons Attribution-Share Alike 3.0 Unported License*. Para ver una copia de esta licencia, visite [http://creativecommons.org/licenses/by-sa/3.0/](http://creativecommons.org/licenses/by-sa/3.0/) o envíe una carta a * Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, EE.UU. *. 
 
 Todos los trabajos derivados deben ser atribuidos a Gerald Coley de BeagleBoard.org. 
 
