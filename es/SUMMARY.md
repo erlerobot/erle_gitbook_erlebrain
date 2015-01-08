@@ -1,9 +1,11 @@
 # Resumen
 
 * [Introducción](README.md)
+   * [BeagleBone Black](bbb.md)
+   * [PixHawk Fire cape](pxf.md)
+   * [Vehiculos](vehicles/README.md)
    * [Especificaciones](specifications/README.md)
    * [Conexiones](connections/README.md)
-   * [Vehiculos](vehicles/README.md)
    * [Referencias](references/README.md)
 * [Hardware](hardware/hardware.md)
    * [ErleBrain](hardware/erle-brain.md)
