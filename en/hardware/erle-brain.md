@@ -1,4 +1,4 @@
-# Erle-brain
+# Erle-Brain
 
 ![erle-brain](https://erlerobotics.com/blog/wp-content/uploads/2014/12/IMG_6334.jpg)
 
