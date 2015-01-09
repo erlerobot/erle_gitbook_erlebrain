@@ -8,10 +8,3 @@ The primary purpose of the ADC pins was intended for use as a Touchscreen contro
 ### VDD_ADC Interface
 The signal `VDD_ADC` is provided via the expansion header, but is **not a voltage rail that is to be used to power anything on an expansion board**. It is supplied from the 1.8V rail of the TPS65217B and is run through an inductor for noise isolation. It is there if need for external circuitry to have access to the VREF rail of the ADC or to add additional filtering via a capacitor if needed.
 
-### License
-
-Part of the content is a derivative of the *BeagleBone System Reference Manual Rev A6.0.0*  licensed under the Creative Commons Attribution-Share Alike 3.0 Unported License. To view a copy of this license, visit [http://creativecommons.org/licenses/by-sa/3.0/](http://creativecommons.org/licenses/by-sa/3.0/) or send a letter to *Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA*.
-
-All derivative works are to be attributed to Gerald Coley of BeagleBoard.org.
-
-For any questions, concerns, or issues submit them to gerald@BeagleBoard.org.

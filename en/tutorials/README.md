@@ -7,6 +7,7 @@ In tihs section you will find different tutorials. Some of them are intended to 
 * Basic Tutorials
 	* [Blink a LED](Blink.md)
 	* [Blink a LED in C++](Blink2.md)
+* [Upgrading Erle-Brain](upgrading_erlebrain.md)
 * [Learn Python](http://erlerobotics.gitbooks.io/erle-robotics-learning-python-gitbook-free/)
 * [Learn Python Networking](http://erlerobotics.gitbooks.io/erle-robotics-python-gitbook-free/)
 * [Learn C++](http://erlerobotics.gitbooks.io/erle-robotics-cpp-gitbook/)
