@@ -51,3 +51,5 @@ The module is compatible with APM-based autopilots such as Erle-brain.
 
 - Red : SDA
 - Black : SCL
+
+Check more information in [product's page](https://erlerobotics.com/blog/product/erle-gps-erle-ublox-gps-compass-kit/) in our store.
