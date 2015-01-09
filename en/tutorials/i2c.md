@@ -1,4 +1,4 @@
-# Como instanciar dispositivos I2C desde el espacio de usuario
+#How to instantiate I2C devices from the userspace
 
 > In general, the kernel should know which I2C devices are connected and          
 > what addresses they live at. However, in certain cases, it does not, so a       
@@ -40,17 +40,18 @@
 > You can also instantiate the device before the driver is loaded or even         
 > available, and you don't need to know what driver the device needs.       
 
-Disponible en la [documentación del Kernel de Linux](http://lxr.free-electrons.com/source/Documentation/i2c/instantiating-devices).
 
-Considerando esto, se puede instancia un sensor (hih6130) conectado al i2c-1 y con dirección `0x27` haciendo:
+Taken from the [Linux kernel documentation](http://lxr.free-electrons.com/source/Documentation/i2c/instantiating-devices).
+
+Considering this, we could instantiate a sensor (hih6130) connected to i2c-1 and with address `0x27` doing:
 
 ```
 echo hih6130 0x27 > /sys/bus/i2c/devices/i2c-1/new_device 
 ```
 
-Después de esto, el dispositivo esta disponible bajo `/sys/bus/i2c/drivers/hih6130/1-0027`.
+After that, the device will be available under `/sys/bus/i2c/drivers/hih6130/1-0027`.
 
-Para eliminar el dispositivo se puede utilizar:
+To remove the device you can use:
 ```
 echo 0x27 > /sys/bus/i2c/devices/i2c-1/delete_device
 ```
