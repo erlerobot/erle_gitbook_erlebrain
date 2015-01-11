@@ -1,15 +1,17 @@
-# Installing
+# Update Erle-Brain from source
 
-This process will be done using a prebuilt Debian image, the same could be done with a Ubuntu FS.
+For those of you that would like hack the system we are providing a step-by-step guide on how to put a preemptible Linux kernel in Erle-Brain as well as the autopilot:
 
-- [Get Debian running on Erle](#get-debian-running-on-erle)
+The process will end with a prebuilt Debian image, the same could be done with a Ubuntu one.
+
+- [Get Debian running on Erle-Brain](#get-debian-running-on-erle)
 - [Making the rt kernel](#making-the-rt-kernel)
 - [Installing the RT kernel](#installing-the-rt-kernel)
 - [Adjusting the clock](#adjusting-the-clock)
 - [Installing and Making ArduPilot](#installing-and-making-ardupilot)
 - [Sources](#sources)
 
-###Get Debian running on Erle
+###Get Debian running on Erle-Brain
 
 - Get a Debian image:
 ```

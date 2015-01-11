@@ -1,5 +1,7 @@
 #Erle-Copter
 
-![ErleCopter](https://erlerobotics.com/blog/wp-content/uploads/2014/10/IMG_6399.jpg)
+![Erle-Copter](https://erlerobotics.com/blog/wp-content/uploads/2014/10/IMG_6399.jpg)
 
-Erle-Copter is the first Linux-based drone. If more information is wanted, check vehicle's specific [book](http://erlerobotics.gitbooks.io/erle-robotics-erle-copter/) or our [webpage](https://erlerobotics.com/blog/erle-copter/)
+Erle-Copter is a Linux-based drone. If you want more information check the vehicle's specific [book](http://erlerobotics.gitbooks.io/erle-robotics-erle-copter/) or our [webpage](https://erlerobotics.com/blog/erle-copter/).
+
+Erle-Copter can be purchsased from [Erle Robotics store](http://erlerobotics.com/blog/tienda/erle-copter).

@@ -1,6 +1,6 @@
 #Hardware Map
 
-The expansion headers P8 and P9 are assigned to the following pins:
+Below we present the hardware map pinout of the PXF:
 
 
 ![PXFpins](../img/pxf_pins.png)

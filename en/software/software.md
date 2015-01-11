@@ -1,21 +1,10 @@
 # Software
 
-### Installing the tools:
-````bash
-sudo apt-get install gawk gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf
-```
+The following sections will describe the software used within [Erle-Brain](http:/erlerobotics.com/blog/erle-brain). Briefly:
 
-### Downloading the code
-```bash
-git clone http://github.com/erlerobot/ardupilot
-```
-
-### Compiling the code
-````bash
-cd ardupilot/ArduCopter
-make configure
-make pxf
-```
-
-The code binaries should be deployed under `/tmp``.
-
+- Linux 3.8 kernel compiled with the PREEMPT option (best results we measured)
+- Debian Wheezy file system
+- ROS Hydromedusa
+- APM running natively in Linux (Copter image preinstalled)
+- mavros ROS package (bridge between ROS and APM)
+- preconfigured daemons for launching everything automatically, WiFi dongles support

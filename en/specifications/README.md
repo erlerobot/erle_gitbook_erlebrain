@@ -1,6 +1,8 @@
-# Specifications
+# Erle-Brain Specifications
 
 ### Electrical specifications
+
+![](https://erlerobotics.com/blog/wp-content/uploads/2014/12/IMG_6334.jpg)
 
 |  |  |
 |---------------|------------------|
@@ -35,8 +37,8 @@
 
 ### Mechanical specifications
 
-| **Size** | 85 x 55 cm|
+| **Size** | 95.6 x 75.27 x 36.2 mm |
 |---------------|------------------|
-|**Layers**| 6 |
+|**Layers**| 6 (BBB) + 6 (PXF)|
 |**PCB Thickness**| 1.6|
-|**RoHS Compliant**|yes|
+|**Weight**|110 grams|

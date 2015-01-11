@@ -1,9 +1,7 @@
-The Robot Operative System (ROS): Powering the world's robots
+The Robot Operative System (ROS), powering the world's robots
 =========
 
-![](../img/ros/rosorg-nb.png)
 
-## Index
 * [Concepts](ROS-concepts.md)
 * [Technical Overview](rostechnicaloverview.md)
 * [Tutorials](rostutorials.md)
@@ -14,6 +12,7 @@ The Robot Operative System (ROS): Powering the world's robots
 	* [Understanding ROS Nodes](tutorials/understanding_ros_nodes.md)
 	* [Understanding ROS Topics](tutorials/understanding_ros_topics.md)
 
+![](../img/ros/rosorg-nb.png)
 
 What is ROS?
 -----
@@ -41,11 +40,11 @@ ROS currently only runs on **Unix-based platforms**. Software for ROS is primari
 
 Distributions
 ----------
-The following distributions have been tested in the robot [Erle](http://erlerobot.com).
+The following distributions have been tested in the robot [Erle-Brain](http://erlerobot.com).
 
 ----
 
-**By default the images provided for Erle come with ROS pre-installed and fully functional.**
+**By default the images provided for Erle-Brain come with ROS pre-installed and fully functional.**
 
 ----
 

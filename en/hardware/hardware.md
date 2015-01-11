@@ -17,6 +17,6 @@ Below the most relevant features of the Erle-Brain are pictured in a table:
 | **User Interface** | Reset Button, Boot button |
 | **Overvoltage Protection** | Shutdown @ 5.6V MAX (only board) |
 | **Expansion Connectors** | Power 5V, 3.3V , VDD_ADC(1.8V), 3.3V I/O on all signals, McASP0, SPI, I2C, GPIO(65), LCD, GPMC, MMC1, MMC2, 7 AIN(1.8V MAX), 4 Timers, 3 Serial Ports, CAN0, eHRPWM(8),XDMA Interrupt, LED Backlight |
-| **Weight** | 35 grams |
+| **Weight** | 110 grams |
 
 
