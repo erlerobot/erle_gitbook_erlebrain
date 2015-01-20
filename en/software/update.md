@@ -32,7 +32,7 @@ The code binaries should be deployed under `/tmp` so copy the binary into `/root
 
 ### Reflashing everything on the eMMC
 
-Generally, updating the autopilot will be enough but if you mess things up we are providing a way to reflash Erle-brain. The easiest way of doing it is using our [ready-to-flash eMMC last image](https://mega.co.nz/#!2JdwXaZC!YFb6Ox_xAGtaIZu3TMSQVGpnbJnPuif3CpHqO7hZzcs).
+Generally, updating the autopilot will be enough but if you mess things up we are providing a way to reflash Erle-brain. The easiest way of doing it is using our [ready-to-flash eMMC last image](https://mega.co.nz/#!aQ8FnB4B!CpqMmZdVyOWvryxdb9Hzvo2UnL44L-0JttPRswgC6Ek).
 
 Download the image and the copy it into a `>8GB microSD card`:
 
