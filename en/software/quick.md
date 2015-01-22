@@ -1,5 +1,11 @@
 # Quick start with Erle-Brain
 
+### Connecting to Erle-Brain
+There are several ways to connect to Erle-Brain:
+
+##### Using a WiFi dongle
+If you purchased your brain with WiFi you'll see that we attached and configured a dongle that will create automatically 
+
 ### Checking the processes
 ```bash
 ps -e
