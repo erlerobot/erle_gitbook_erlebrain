@@ -6,6 +6,11 @@ There are several ways to connect to Erle-Brain:
 ##### Using a WiFi dongle (5 GHz frequency)
 If you purchased your brain with WiFi you'll see that we attached and configured a dongle that will create automatically a WiFi network (hotspot mode) with names with an `erle` preffix. The IP address of Erle-Brain is generally `11.0.0.1` and your machine should get the `11.0.0.2` (DHCP server has been configured to assign only one address).
 
+----
+
+**Make sure that your laptop/phone/tablet/... has 5 GHz support. You should look for 802.11 ac support.**
+
+----
 
 ##### Through mini USB
 Erle-Brain supports client mode USB. Using this connection mechanism and the Ethernet-over-USB kernel module you should be able to SSH into the board.
