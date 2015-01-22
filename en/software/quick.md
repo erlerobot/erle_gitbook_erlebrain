@@ -29,6 +29,9 @@ Now that you are in the same subnet just ssh into the board:
 ssh root@192.168.7.2
 ```
 
+##### Using a GCS (MissionPlanner, APMPlanner, DroidPlanner, etc)
+Select `UDP` and use the IP address `11.0.0.1` and the port `6000`.
+
 ### Checking the processes
 ```bash
 ps -e
