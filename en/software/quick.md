@@ -10,7 +10,16 @@ If you purchased your brain with WiFi you'll see that we attached and configured
 ##### Through mini USB
 Erle-Brain supports client mode USB. Using this connection mechanism and the Ethernet-over-USB kernel module you should be able to SSH into the board.
 
+To do so, connect Erle-Brain using the mini USB connector:
 
+![](https://erlerobotics.com/blog/wp-content/uploads/2014/12/IMG_6334.jpg)
+
+Find the new network interface that should've been created in your OS and assign the following IP address: `192.168.7.1`.
+
+Now that you are in the same subnet just ssh into the board:
+```bash
+ssh root@192.168.7.2
+```
 
 ### Checking the processes
 ```bash
