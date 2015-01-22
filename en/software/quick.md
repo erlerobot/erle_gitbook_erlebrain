@@ -14,7 +14,7 @@ To do so, connect Erle-Brain using the mini USB connector:
 
 ![](https://erlerobotics.com/blog/wp-content/uploads/2014/12/IMG_6334.jpg)
 
-Find the new network interface that should've been created in your OS and assign the following IP address: `192.168.7.1`. In Linux:
+Find the new network interface that should've been created in your OS and assign the following IP address: `192.168.7.1`. Assuming that your new interface is eth6 and you are in Linux: 
 ```bash
 sudo ifconfig eth6 192.168.7.1
 ```
