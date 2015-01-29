@@ -28,7 +28,7 @@
    * [Updating the sofware](software/update.md)
        * [From source](software/ardupilot/installing.md)
    * [Operating System](software/os.md)
-       * Ubuntu Snappy Core
+       * [Ubuntu Snappy Core](software/snappy.md)
    * [Autopilot](software/#)
    * [Real Time](software/realtime.md)
        * [SCHED_DEBUG](software/scheddebug.md)
