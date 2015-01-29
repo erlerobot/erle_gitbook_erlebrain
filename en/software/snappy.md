@@ -18,3 +18,13 @@ victor@ubuntu:~/Desktop/ubuntu-utopic$ ls -al debian/build/build-generic/.config
 -rw-rw-r-- 1 victor victor 175232 Jan 29 17:08 debian/build/build-generic/.config
 
 ```
+
+### Compile the code
+```bash
+make -j4
+```
+
+### Find the device tree blobs
+```bash
+ls arch/arm/boot/dts
+```
