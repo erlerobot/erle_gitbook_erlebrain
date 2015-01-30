@@ -24,6 +24,11 @@ victor@ubuntu:~/Desktop/ubuntu-utopic$ ls -al debian/build/build-generic/.config
 make -j4
 ```
 
+#### Compile the dts solely
+```bash
+make ARCH=arm dtbs
+```
+
 ### Find the device tree blobs
 ```bash
 ls arch/arm/boot/dts
