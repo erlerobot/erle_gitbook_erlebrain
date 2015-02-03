@@ -50,6 +50,5 @@ export CROSS_COMPILE=arm-linux-gnueabihf-
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- uImage dtbs -j4
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- uImage-dtb.am335x-boneblack -j4
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- modules -j4
-sudo make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- INSTALL_MOD_PATH=/media/victor/system-a modules_install```
-
-````
+sudo make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- INSTALL_MOD_PATH=/media/victor/system-a modules_install
+```
