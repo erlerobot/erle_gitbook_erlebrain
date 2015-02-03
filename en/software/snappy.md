@@ -36,12 +36,17 @@ ls arch/arm/boot/dts
 ```
 
 #### 3.8 (BeagleBoard kernel full support)
-##### Getting the kernel, the configuration file and compiling it
+##### Getting the kernel and the configuration file
 ```bash
 git clone git://kernel.ubuntu.com/ppisati/ubuntu-vivid.git
 cd ubuntu-vivid/
 git checkout snappy_beagle_3.8
 ARCH=arm ./scripts/kconfig/merge_config.sh arch/arm/configs/erlerobot_defconfig arch/arm/configs/snappy/*.config
 export CROSS_COMPILE=arm-linux-gnueabihf-
-make -j4
+```
+
+###### Compile the kernel
+```bash
+make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- uImage dtbs
+make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- modules
 ```
