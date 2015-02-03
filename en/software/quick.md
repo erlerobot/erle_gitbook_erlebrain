@@ -12,6 +12,13 @@ If you purchased your brain with WiFi you'll see that we attached and configured
 
 ----
 
+----
+
+Erle-Brain creates a network called "erle-something" or "erle".
+The password for the network is **holaerle**.
+
+-----
+
 ##### Through mini USB
 Erle-Brain supports client mode USB. Using this connection mechanism and the Ethernet-over-USB kernel module you should be able to SSH into the board.
 
