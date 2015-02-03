@@ -47,6 +47,9 @@ export CROSS_COMPILE=arm-linux-gnueabihf-
 
 ###### Compile the kernel
 ```bash
-make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- uImage dtbs
-make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- modules
-```
+make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- uImage dtbs -j4
+make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- uImage-dtb.am335x-boneblack -j4
+make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- modules -j4
+sudo make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- INSTALL_MOD_PATH=/media/victor/system-a modules_install```
+
+````
