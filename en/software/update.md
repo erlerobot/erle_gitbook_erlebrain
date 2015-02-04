@@ -69,3 +69,11 @@ Here’s the procedure to prepare the SD Card
 - Select the device that corresponds to the SD Card reader.
 - Write the image file. This will take a while.
 - Eject the SD Card.
+
+### Boot from a microSD card
+We also provide the option of booting directly from 
+a microSD card. To do so, fetch the [bootable microSD card image]() and 
+put it into a microSD card. Place it on Erle-Brain and start playing with it :).
+
+
+
