@@ -41,6 +41,7 @@
        * [Technical Overview](ros/rostechnicaloverview.md)
    * [Links Ardupilot](software/ardupilot/links.md)
    * Miscellaneous
+       * systemd
 * [Vehicles](vehicles/README.md)
    * [Copter](vehicles/copter/README.md)
        * [Connections](vehicles/copter/connections.md)
