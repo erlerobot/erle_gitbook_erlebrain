@@ -6,23 +6,24 @@
 >
 > https://wiki.archlinux.org/index.php/Systemd
 
-With `systemd` we have a `/etc/systemd/system/` directory chock-full of symlinks to files in /usr/lib/systemd/system/. /usr/lib/systemd/system/ contains init scripts; to start a service at boot it must be linked to /etc/systemd/system/. The systemctl command does this for you when you enable a new service, like this example for ClamAV:
+With `systemd` we have a `/etc/systemd/system/` directory chock-full of symlinks to files in `/usr/lib/systemd/system/`. `/usr/lib/systemd/system/` contains init scripts; to start a service at boot it must be linked to `/etc/systemd/system/`. The systemctl command does this for you when you enable a new service, like this example:
 
+```
 # systemctl enable clamd@scan.service
-ln -s '/usr/lib/systemd/system/clamd@scan.service' '/etc/systemd/system/multi-user.target.wants/clamd@scan.service'
-How do you know the name of the init script, and where does it come from? On Centos7 they're broken out into separate packages. Many servers (for example Apache) have not caught up tosystemd and do not have systemd init scripts. ClamAV offers both systemd and SysVInit init scripts, so you can install the one you prefer:
+ln -s '/usr/lib/systemd/system/clamd@scan.service'
+'/etc/systemd/system/multi-user.target.wants/clamd@scan.service'
+```
 
-$ yum search clamav
-clamav-server-sysvinit.noarch
-clamav-server-systemd.noarch
 So what's inside these init scripts? We can see for ourselves:
-
+```
 $ less /usr/lib/systemd/system/clamd@scan.service
 .include /lib/systemd/system/clamd@.service
 [Unit]
 Description = Generic clamav scanner daemon
 [Install]
 WantedBy = multi-user.target
+```
+
 Now you can see how systemctl knows where to install the symlink, and this init script also includes a dependency on another service, clamd@.service.
 
 systemctl displays the status of all installed services that have init scripts:
