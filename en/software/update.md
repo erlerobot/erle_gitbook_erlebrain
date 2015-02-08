@@ -75,5 +75,13 @@ We also provide the option of booting directly from
 a microSD card. To do so, fetch the [bootable microSD card image](https://drive.google.com/file/d/0B6D4e4nVvowdLWp0QVVIckpGUEU/view) and 
 put it into a microSD card. Place it on Erle-Brain and start playing with it :).
 
+The image has:
+
+ - Debian Wheezy file system
+ - APM 
+ - ROS Hydromedusa installed and launched at init
+ - mavros ROS package launched at init
+
+Customizations can be made editing `/etc/init.d/apm4-startup.sh`.
 
 
