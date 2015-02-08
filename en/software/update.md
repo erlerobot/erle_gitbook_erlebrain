@@ -72,7 +72,7 @@ Here’s the procedure to prepare the SD Card
 
 ### Boot from a microSD card
 We also provide the option of booting directly from 
-a microSD card. To do so, fetch the [bootable microSD card image]() and 
+a microSD card. To do so, fetch the [bootable microSD card image](https://drive.google.com/file/d/0B6D4e4nVvowdLWp0QVVIckpGUEU/view) and 
 put it into a microSD card. Place it on Erle-Brain and start playing with it :).
 
 
