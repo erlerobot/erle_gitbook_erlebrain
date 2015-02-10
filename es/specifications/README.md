@@ -1,8 +1,10 @@
-# Especificaciones
+# Especificaciones de Erle-Brain:
 
-# Especificaciones eléctricas
+### Especificaciones eléctricas
 
-|  |  |
+![](https://erlerobotics.com/blog/wp-content/uploads/2014/12/IMG_6334.jpg)
+
+
 |---------------|------------------|
 | **Power supply** | 5V supply|
 |  | [Power module conector]() |
@@ -22,11 +24,21 @@
 ||1 Power brick in|
 ||1 Backup battery conector|
 
+#### Consumo eléctrico
+
+| MODE | consumption (mA) |
+|------|------------------|
+|Idling @ UBoot | 235 |
+|Kernel Booting (Peak) | 442 |
+|Kernel Idling | 323 |
+|Dongle WiFi creating hotspot | 469 |
+|Autopilot (APM) + ROS | 397 |
+|Autopilot (APM) + ROS + Dongle in hotspot | 569 |
+
 # Especificaciones mecánicas
 
-|  |  |
+| **Size** | 95.6 x 75.27 x 36.2 mm |
 |---------------|------------------|
-| **Size** | 85 x 55 cm|
-|**Layers**| 6 |
+|**Layers**| 6 (BBB) + 6 (PXF)|
 |**PCB Thickness**| 1.6|
-|**RoHS Compliant**|yes|
+|**Weight**|110 grams|
