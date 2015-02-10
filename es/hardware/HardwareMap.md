@@ -1,6 +1,10 @@
 # Mapa de Hardware
 
-Las cabeceras de expansión P8 y P9 se asignan a los siguiente pines:
+Debajo presentamos el mapa hardware de pines de salida del PXF:
+
+
+![PXFpins](../../en/img/pxf_pins.png)
+
 
 | **Pin** | **Function** |
 |---------|--------------|
