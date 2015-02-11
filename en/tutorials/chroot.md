@@ -38,3 +38,17 @@ mount -o loop,offset=$(( 512 * 8192 )) my-snappy.img /mnt/system-boot
 mkdir /mnt/system-a
 mount -o loop,offset=$(( 512 * 139264 )) my-snappy.img /mnt/system-a
 ```
+Next we’ll copy a statically built QEMU binary for ARM to the mounted image. You might need to install QEMU on the host system first. Furthermore, we need to mount or bind the special system directories from the host to the chroot.
+
+```bash
+apt-get install qemu-user-static
+cp /usr/bin/qemu-arm-static /mnt/system-a/usr/bin/
+
+mount -o bind /dev /mnt/system-a/dev
+mount -o bind /proc /mnt/system-a/proc
+mount -o bind /sys /mnt/system-a/sys
+
+```
+
+
+
