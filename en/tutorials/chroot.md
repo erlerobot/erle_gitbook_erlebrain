@@ -48,6 +48,7 @@ mount -o bind /proc /mnt/system-a/proc
 mount -o bind /sys /mnt/system-a/sys
 
 ```
+
 Next comes the magic. This registers the ARM executable format with the QEMU static binary. Thus, the path to qemu-arm-static has to match where it is located on the host and slave systems:
 
 ```bash
