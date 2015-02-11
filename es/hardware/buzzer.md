@@ -1,5 +1,5 @@
- #Buzzer
+ # Buzzer
  
-El zumbador es un dispositivo útil para conocer el estado del drone. Se pueden distinguir los distintos estados: armado, desarmado, ... Se puede utilizar también para generar sonidos personalizados.h
+El zumbador es un dispositivo útil para conocer diferentes estados del drone. Se pueden distinguir los distintos estados: Armado, desarmado... Se puede utilizar también para generar sonidos personalizados.
 
 ![gps](../img/hardware/buzzer.jpg)
