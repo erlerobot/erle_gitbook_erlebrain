@@ -31,7 +31,10 @@ For more about the Snappy Ubuntu Core file system and partitions refer to the [d
 ### Mounting the images
 
 ```bash
+# mount the boot partition
 mkdir /mnt/system-boot
+mount -o loop,offset=$(( 512 * 8192 )) my-snappy.img /mnt/system-boot
+# mount the root filesystem
 mkdir /mnt/system-a
-
+mount -o loop,offset=$(( 512 * 139264 )) my-snappy.img /mnt/system-a
 ```
