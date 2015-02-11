@@ -27,3 +27,11 @@ The first partition corresponds with the boot partition (`system-boot`) and the 
 The last partition (`writable`) contains the writable content that is generally mounted on `/oem` in the file system.
 
 For more about the Snappy Ubuntu Core file system and partitions refer to the [docs](https://developer.ubuntu.com/en/snappy/guides/filesystem-layout/).
+
+### Mounting the images
+
+```bash
+mkdir /mnt/system-boot
+mkdir /mnt/system-a
+
+```
