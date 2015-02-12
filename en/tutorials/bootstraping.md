@@ -29,5 +29,5 @@ echo ':arm:M::\x7fELF\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x2
 
 `chroot` into it:
 ```bash
-chroot /mnt/system-a
+chroot ~/vivid
 ```
