@@ -60,9 +60,9 @@ echo ':arm:M::\x7fELF\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x2
 chroot /mnt/system-a
 ```
 
+#### Cleaning the environment
 
-### Cleaning the environment
-
+Once you're done playing with the image, it's generally a good idea to clean everything
 ```bash
 umount /mnt/system-a/dev
 umount /mnt/system-a/proc
