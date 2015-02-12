@@ -61,6 +61,7 @@
        * [How to fet serial over usb](tutorials/serial.md)
        * [How to instantiate I2C from the userspace](tutorials/i2c.md)
        * [chroot to Erle-Brain's image](tutorials/chroot.md)
+       * Bootstrapping an image
    * [ROS tutorials](ros/rostutorials.md)
        * [Installing and Configuring Your ROS Environment](ros/tutorials/rosinstall.md)
        * [Navigating the ROS Filesystem](ros/tutorials/rosnavigating.md)
