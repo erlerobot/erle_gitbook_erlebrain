@@ -55,6 +55,17 @@ Next comes the magic. This registers the ARM executable format with the QEMU sta
 echo ':arm:M::\x7fELF\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x28\x00:\xff\xff\xff\xff\xff\xff\xff\x00\xff\xff\xff\xff\xff\xff\xff\xff\xfe\xff\xff\xff:/usr/bin/qemu-arm-static:' > /proc/sys/fs/binfmt_misc/register
 ```
 
+`chroot` into it:
+```bash
+chroot /mnt/system-a
+```
 
+```bash
+umount /mnt/system-a/dev
+umount /mnt/system-a/proc
+umount /mnt/system-a/sys
+umount /mnt/system-a
+umount /mnt/system-boot
+```
 
 
