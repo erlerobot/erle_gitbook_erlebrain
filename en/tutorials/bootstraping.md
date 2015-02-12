@@ -10,3 +10,24 @@ mkdir ~/vivid
 qemu-debootstrap --arch=armhf vivid ~/vivid/
 ```
 
+### Mounting the images
+
+```bash
+apt-get install qemu-user-static
+cp /usr/bin/qemu-arm-static ~/vivid/usr/bin/
+mount -o bind /dev ~/vivid/dev
+mount -o bind /proc ~/vivid/proc
+mount -o bind /sys ~/vivid/sys
+
+```
+
+Next comes the magic. This registers the ARM executable format with the QEMU static binary. Thus, the path to qemu-arm-static has to match where it is located on the host and slave systems:
+
+```bash
+echo ':arm:M::\x7fELF\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x28\x00:\xff\xff\xff\xff\xff\xff\xff\x00\xff\xff\xff\xff\xff\xff\xff\xff\xfe\xff\xff\xff:/usr/bin/qemu-arm-static:' > /proc/sys/fs/binfmt_misc/register
+```
+
+`chroot` into it:
+```bash
+chroot /mnt/system-a
+```
