@@ -69,6 +69,10 @@
        * [Building a ROS Package](ros/tutorials/building_a_ros_package.md)
        * [Understanding ROS Nodes](ros/tutorials/understanding_ros_nodes.md)
        * [Understanding ROS Topics](ros/tutorials/understanding_ros_topics.md)
+   * [Autopilot tutorial](tutorials/autopilot_tutorial/Intro.md)
+       * [Introduction and code structure](tutorials/autopilot_tutorial/learning_ardupilot.md)
+       * [Compiling examples](tutorials/autopilot_tutorial/ardupilot_examples.md)
+       * [Threading](tutorials/autopilot_tutorial/threading.md)
 * [Contact information](contact_information/README.md)
 * [Legal note](legal_note/README.md)
 
