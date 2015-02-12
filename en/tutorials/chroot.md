@@ -63,6 +63,7 @@ chroot /mnt/system-a
 #### Cleaning the environment
 
 Once you're done playing with the image, it's generally a good idea to clean everything
+
 ```bash
 umount /mnt/system-a/dev
 umount /mnt/system-a/proc
