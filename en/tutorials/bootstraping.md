@@ -14,10 +14,10 @@ qemu-debootstrap --arch=armhf vivid ~/vivid/
 
 ```bash
 apt-get install qemu-user-static
-cp /usr/bin/qemu-arm-static ~/vivid/usr/bin/
-mount -o bind /dev ~/vivid/dev
-mount -o bind /proc ~/vivid/proc
-mount -o bind /sys ~/vivid/sys
+sudo cp /usr/bin/qemu-arm-static ~/vivid/usr/bin/
+sudo mount -o bind /dev ~/vivid/dev
+sudo mount -o bind /proc ~/vivid/proc
+sudo mount -o bind /sys ~/vivid/sys
 
 ```
 
