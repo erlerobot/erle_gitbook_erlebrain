@@ -18,14 +18,11 @@ The vehicle directories are the top level directories that define the firmware f
 
 Let's see how ArduPilot is organized within Erle-Brain. In order to do so, first you need to connect via `ssh`. Follow the next steps:
 
-    1.- Turn on Erle-Brain
-    2.- Connect to its wifi
-    3.- Open a terminal session and type:  
-        `ssh root@11.0.0.1
-    4.- Move to ArduPilot folder: 
-        ``cd ardupilot`
-    5.- List the content: 
-        ``ls -l``
+* Turn on Erle-Brain
+* Connect to its WiFi`
+* Open a terminal session and type:  `ssh root@11.0.0.1`
+* Move to ArduPilot folder: `cd ardupilot`
+* List the content: `ls -l`
 
 ![ardupilot_folder](../../img/autopilot/ardupilot_folder.png)
 
@@ -37,8 +34,8 @@ The Erle-Brain is a Linux based board, therefore, device portability it is made 
 
 Let's see how is distributed this `libraries` folder. Assuming you are already connected into Erle-Brain:
 
-    1.- Place into the desired folder: `cd ardupilot/libraries`
-    2.- List its content: `ls`
+* Place into the desired folder: `cd ardupilot/libraries`
+* List its content: `ls`
 
 You should see the next folders:
 
@@ -70,7 +67,7 @@ To build a vehicle or other ‘sketch’ for a particular board target you would
 
 For each of these builds you can add additional qualifiers, and on some you can do a parallel build to speed things up. For example, in the ArduCopter directory you could do:
 
-make pxf -j8
+    make pxf -j8
 
 meaning do a build for Erle-Brain with an 8 way parallel build. You should also look into enabling ccache for faster builds.
 
