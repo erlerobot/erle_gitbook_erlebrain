@@ -1,12 +1,12 @@
 # Installing and Configuring Your ROS Environment
 
 
-## Table of Contents
+### Table of Contents
 - [Prerequisites](#prerequisites)
 - [Create a catkin Workspace](#create-a-catkin-workspace)
 - [Resolving Dependencies](#resolving-dependencies)
 - [Building ROS](#building-ros)
-- [Building ROS for Snappy Ubuntu Core](#ros-for-snappy)
+  - [Building ROS for Snappy Ubuntu Core](#ros-for-snappy)
 - [Sources](#sources)
 
 ### Ubuntu Precise (12.04)
@@ -215,7 +215,7 @@ Note: You might want to select a different CMake build type (e.g. `RelWithDebInf
 
 Now you have to reboot.
 
-#### ROS for Snappy
+##### ROS for Snappy
 
 ### Sources:
 - [Installing Hydro in Debian](http://wiki.ros.org/hydro/Installation/Debian)
