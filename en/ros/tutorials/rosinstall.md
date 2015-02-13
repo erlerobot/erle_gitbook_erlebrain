@@ -1,7 +1,7 @@
 # Installing and Configuring Your ROS Environment
 
 
-## Table of Content
+## Table of Contents
 - [Prerequisites](#prerequisites)
 - [Create a catkin Workspace](#create-a-catkin-workspace)
 - [Resolving Dependencies](#resolving-dependencies)
