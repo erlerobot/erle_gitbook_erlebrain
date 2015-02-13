@@ -13,7 +13,7 @@ If you think some important information is missing or could be improved then ple
 * [The Example Sketches](ardupilot_examples.md)
 * [ArduPilot threading](threading.md)
 * [UARTs and the console](uart_console.md)
-* [RCInput and RCOutput]()
+* [RCInput and RCOutput](rc.md)
 * [Storage and EEPROM management]()
 * [ The vehicle code]()
 
