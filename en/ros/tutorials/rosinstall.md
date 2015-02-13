@@ -215,8 +215,6 @@ Note: You might want to select a different CMake build type (e.g. `RelWithDebInf
 
 Now you have to reboot.
 
-##### ROS for Snappy
-
 
 ### Sources:
 - [Installing Hydro in Debian](http://wiki.ros.org/hydro/Installation/Debian)
