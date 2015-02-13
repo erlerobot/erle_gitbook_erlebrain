@@ -14,7 +14,7 @@ If you think some important information is missing or could be improved then ple
 * [ArduPilot threading](threading.md)
 * [UARTs and the console](uart_console.md)
 * [RCInput and RCOutput](rc.md)
-* [Storage and EEPROM management]()
+* [Storage and EEPROM management](storage.md)
 * [ The vehicle code]()
 
 ###Upcoming Tutorials
