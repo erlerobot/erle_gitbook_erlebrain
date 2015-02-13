@@ -6,6 +6,7 @@
 - [Create a catkin Workspace](#create-a-catkin-workspace)
 - [Resolving Dependencies](#resolving-dependencies)
 - [Building ROS](#building-ros)
+- [Building ROS for Snappy Ubuntu Core](#ros-for-snappy)
 - [Sources](#sources)
 
 ### Ubuntu Precise (12.04)
