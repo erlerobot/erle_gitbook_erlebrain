@@ -73,6 +73,9 @@
        * [Introduction and code structure](tutorials/autopilot_tutorial/learning_ardupilot.md)
        * [Compiling examples](tutorials/autopilot_tutorial/ardupilot_examples.md)
        * [Threading](tutorials/autopilot_tutorial/threading.md)
+       * [UART and Console](tutorials/autopilot_tutorial/uart_console.md)
+       * [RC input and output](tutorials/autopilot_tutorial/rc.md)
+       * [Storage and EEPROM management](tutorials/autopilot_tutorial/storage.md)
 * [Contact information](contact_information/README.md)
 * [Legal note](legal_note/README.md)
 

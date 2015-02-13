@@ -2,16 +2,15 @@
 
 ###Contents
 
-    1 [Understanding ArduPilot threading](#understanding ardupilot threading)
-        1.1 [The timer callbacks](#the-timer-callbacks)
-        1.2 HAL specific threads
-        1.3 Driver specific threads
-        1.4 Ardupilot drivers versus platform drivers
-        1.5 Platform specific threads and tasks
-        1.6 The AP_Scheduler system
-        1.7 Semaphores
-        1.8 Lockless Data Structures
-        1.9 The PX4 ORB
+[Understanding ArduPilot threading](#understanding-ardupilot-threading)
+* [The timer callbacks](#the-timer-callbacks)
+* [HAL specific threads](#hal-specific-threads)
+* [Driver specific threads](#driver-specific-threads)
+* [Ardupilot drivers versus platform drivers](#ardupilot-drivers-versus-platform-drivers)
+* [Platform specific threads and tasks](#platform-specific-threads-and-tasks)
+* [The AP_Scheduler system](#the-ap-scheduler-system)
+* [Semaphores](#semaphores)
+* [Lockless Data Structures](#lockless-data-structures)
 
 ###Understanding ArduPilot threading
 
@@ -65,7 +64,8 @@ One common use of threads is to provide drivers a way to schedule slow tasks wit
 hal.scheduler->register_io_process(AP_HAL_MEMBERPROC(&AP_Terrain::io_timer));
 
 The sets up the AP_Terrain::io_timer function to be called regularly. That is called within the boards IO thread, meaning it is a low realtime priority and is suitable for storage IO tasks. It is important that slow IO tasks like this not be called on the timer thread as they would cause delays in the more important processing of high speed sensor data.
-Driver specific threads
+
+###Driver specific threads
 
 It is also possible to create driver specific threads, to support asynchronous processing in a manner specific to one driver. Currently you can only create driver specific threads in a manner that is platform dependent, so this is only appropriate if your driver is intended to run only on one type of autopilot board. If you want it to run on multiple AP_HAL targets then you have two choices:
 
@@ -73,7 +73,8 @@ It is also possible to create driver specific threads, to support asynchronous p
     you can add a new HAL interface that provides a generic way to create threads on multiple AP_HAL targets (please contribute patches back)
 
 An example of a driver specific thread is the ToneAlarm thread in the Linux port. See AP_HAL_Linux/ToneAlarmDriver.cpp
-Ardupilot drivers versus platform drivers
+
+###Ardupilot drivers versus platform drivers
 
 You may notice some driver duplication in ArduPilot. For example, we have a MPU6000 driver in libraries/AP_InertalSensor/AP_InertialSensor_MPU6000.cpp, and another MPU6000 driver in PX4Firmware/src/drivers/mpu6000.
 
@@ -82,53 +83,19 @@ The reason for this duplication is that the PX4 project already provides a set o
 So if we have an MPU6000 on the board we use the AP_InertialSensor_MPU6000.cpp driver on non-PX4 platforms, and the AP_InertialSensor_PX4.cpp driver on PX4 based platforms.
 
 The same type of split can also happen for other AP_HAL ports. For example, we could use Linux kernel drivers for some sensors on Linux boards. For other sensors we use the generic AP_HAL I2C and SPI interfaces to use the ArduPilot “in-tree” drivers which work across a wide range of boards.
-Platform specific threads and tasks
 
-On some platforms there will be a number of base tasks and threads that will be created by the startup process. These are very platform specific so for the sake of this tutorial I will concentrate on the tasks used on PX4 based boards.
+###Platform specific threads and tasks
 
-In the “ps” output above we saw a number of tasks and threads that were not started by the AP_HAL_PX4 Scheduler code. Specifically they are:
+On some platforms there will be a number of base tasks and threads that will be created by the startup process. These are very platform specific so we will focuse on Erle-Brain. The startup of the tasks is controled by the Erle-Brain specific [apm4-startup.sh](http://pastebin.com/95TbBtpW)
 
-    idle task – called when there is nothing else to run
-    init – used to start up the system
-    px4io – handle the communication with the PX4IO co-processor
-    hpwork – handle thread based PX4 drivers (mainly I2C drivers)
-    lpwork – handle thread based low priority work (eg. IO)
-    fmuservo – handle talking to the auxillary PWM outputs on the FMU
-    uavcan – handle the uavcan CANBUS protocol
+As you can observe in the link, this startup script loads all the necessary to make Erle-Brain fly. First it loads all the necessary *capes*: SPI, PRU, RC input, Serial, PWM and ADC.
 
-The startup of all of these tasks is controled by the PX4 specific rc.APM script. That script is run when the PX4 boots, and is responsible for detecting what sort of PX4 board we are using then loading the right tasks and drivers for that board. It is a “nsh” script, which is similar to a bourne shell script (though nsh is much more primitive).
+Secondly, forces the WiFi interface to have the expected 11.0.0.1 IP. Finally, launches the AutoPilot. Depending which vehicle you are using, you will see different executable names: ArduCopter, ArduPlane or APM2rover. It also specifies the telemetry communication protol, IP and port.
 
-As an exercise, try editing the rc.APM script and adding some sleep and echo commands. Then upload a new firmware and connect to the debug console while the board is booting. Your echo commands should show up on the console.
+If you would like to launch ROS by default, you can add ROS initilization lines here. 
 
-Another very useful way of exploring the startup of the PX4 is to boot without a microSD card in the slot. The rcS script, which runs just before rc.APM, detects if a microSD is inserted and gives you a bare nsh console on the USB port if it isn’t. You can then manually run all the steps of rc.APM yourself on the USB console to learn how it works.
 
-Try the following exercise after booting a Pixhawk without a microSD card and connecting to the USB console:
-
-tone_alarm stop
-uorb start
-mpu6000 start
-mpu6000 info
-mpu6000 test
-mount -t binfs /dev/null /bin
-ls /bin
-perf
-
-Try playing with the other drivers. Have a look in /bin to see what is available. The source code for most of these commands is in PX4Firmware/src/drivers. Have a look through the mpu6000 driver to get an idea of what is involved.
-
-Given we are on the topic of threads and tasks, a brief description of threads in the PX4Firmware git tree is worth mentioning. If you look in the mpu6000 driver you will see a line like this:
-
-hrt_call_every(&_call, 1000, _call_interval, (hrt_callout)&MPU6000::measure_trampoline, this);
-
-that is the equivalent of the hal.scheduler->register_timer_process() function in the AP_HAL, but is PX4 specific and is also much more flexible. It says that it wants the HRT (high resolution timer) subsystem of the PX4 to call the MPU6000::measure_trampoline function every 1000 microseconds.
-
-Using hrt_call_every() is the common method used for regular events in drivers where the operations are very fast, such as SPI device drivers. The operations are typically run with interrupts disabled, and should take only a few tens of microseconds at most.
-
-If you compare this to the hmc5883 driver, you will instead see a line like this:
-
-work_queue(HPWORK, &_work, (worker_t)&HMC5883::cycle_trampoline, this, 1);
-
-that uses an alternative mechanism for regular events which is suitable for slower devices, such as I2C devices. What this does is add the cycle_trampoline function to a work queue within the hpwork thread that you saw above. Calls made within HPWORK workers should run with interrupts enabled and may take up to a few hundred microseconds. For tasks which will take longer than that the LPWORK work queue should be used, which runs them in the lower priority lpwork thread.
-The AP_Scheduler system
+###The AP_Scheduler system
 
 The next aspect of ArduPilot threading and tasks to understand is the AP_Scheduler system. The AP_Scheduler library is used to divide up time within the main vehicle thread, while providing some simple mechanisms to control how much time is used for each operation (called a ‘task’ in AP_Scheduler).
 
@@ -137,7 +104,7 @@ The way it works is that the loop() function for each vehicle implementation con
     wait for a new IMU sample to arrive
     call a set of tasks between each IMU sample
 
-It is a table driven scheduler, and each vehicle type has a AP_Scheduler::Task table. To learn how it works have a look at the AP_Scheduler/examples/Scheduler_test.pde sketch.
+It is a table driven scheduler, and each vehicle type has a AP_Scheduler::Task table. To learn how it works have a look at the [AP_Scheduler/examples/Scheduler_test.pde sketch](https://github.com/erlerobot/ardupilot/blob/master/libraries/AP_Scheduler/examples/Scheduler_test/Scheduler_test.pde).
 
 If you look inside that file you will see a small table with a set of 3 scheduling tasks. Associated with each task are two numbers. The table looks like this:
 
@@ -167,36 +134,25 @@ You should now go and modify the Scheduler_test example and add in your own task
     update the AHRS and print the roll/pitch
 
 Look at the example sketches for each library that you worked with earlier in this tutorial to understand how to use each sensor library.
-Semaphores
 
-When you have multiple threads (or timer callbacks) you need to ensure that data structures shared by the two logical threads of execution are updated in a way that prevents corruption. There are 3 principle ways of doing this in ArduPilot – semaphores, lockless data structures and the PX4 ORB.
+###Semaphores
+
+When you have multiple threads (or timer callbacks) you need to ensure that data structures shared by the two logical threads of execution are updated in a way that prevents corruption. There are two principle ways of doing this in ArduPilot – semaphores and lockless data structures.
 
 AP_HAL Semaphores are just wrappers around whatever semaphore system is available on the specific platform, and provide a simple mechanism for mutual exclusion. For example, I2C drivers can ask for the I2C bus semaphore to ensure that only one I2C device is used at a time.
 
-Go and have a look at the hmc5883 driver in libraries/AP_Compass/AP_Compass_HMC5883.cpp and look for the _i2c_sem variable. Look at all the places it is used, and see if you can work out why it is needed.
-Lockless Data Structures
+Go and have a look at the hmc5883 driver in libraries/AP_Compass/[AP_Compass_HMC5843.cpp](https://github.com/erlerobot/ardupilot/blob/master/libraries/AP_Compass/AP_Compass_HMC5843.cpp) and look for the _i2c_sem variable. Look at all the places it is used, and see if you can work out why it is needed.
+
+###Lockless Data Structures
 
 The ArduPilot code also contains examples of using lockless data structures to avoid the need for a semaphore. This can be a lot more efficient than semaphores.
 
 Two examples of lockless data structures in ArduPilot are:
 
-    the _shared_data structure in libraries/AP_InertialSensor/AP_InertialSensor_MPU9250.cpp
-    the ring buffers used in numerous places. A good example is libraries/DataFlash/DataFlash_File.cpp
+* The _shared_data structure in libraries/AP_InertialSensor/[AP_InertialSensor_MPU9250.cpp](https://github.com/erlerobot/ardupilot/blob/master/libraries/AP_InertialSensor/AP_InertialSensor_MPU9250.cpp)
 
-Go and have a look at these two examples, and prove to yourself that they are safe for concurrent access. For DataFlash_File look at the use of the _writebuf_head and _writebuf_tail variables.
+* The ring buffers used in numerous places. A good example is libraries/DataFlash/[DataFlash_File.cpp](https://github.com/erlerobot/ardupilot/blob/master/libraries/DataFlash/DataFlash_File.cpp)
+
+Go and have a look at these two examples, and prove to yourself that they are safe for concurrent access. For DataFlash_File look at the use of the `_writebuf_head` and `_writebuf_tail variables.
 
 It would be nice to create a generic ring buffer class which could be used instead of the separate ringbuffer implementations in several places in ArduPilot. If you want to contribute that then please do a pull request!
-The PX4 ORB
-
-Another example of this type of mechanism is the PX4 ORB. The ORB (Object Request Broker) is a way of providing data from one part of the system to another (eg. device driver -> vehicle code) using a publish/subscribe model that is safe in a multi-threaded environment.
-
-The ORB provides a nice mechanism for declaring structures which will be shared in this way (all defined in PX4Firmware/src/modules/uORB/topics). Code can then “publish” data to one of these topics, which is picked up by other pieces of code.
-
-An example is the publication of actuator values so the uavcan ESCs can be used on Pixhawk. Have a look at the _publish_actuators() function in AP_HAL_PX4/RCOutput.cpp. You will see that it advertises a “actuator_direct” topic, which contains the speed desired for each ESC. The uavcan code these watches for changes to this topic in PX4Firmware/src/modules/uavcan/uavcan_main.cpp and outputs the new values to the uavcan ESCs.
-
-Two other common mechanisms for communicating with PX4 drivers are:
-
-    ioctl calls (see the examples in AP_HAL_PX4/RCOutput.cpp)
-    /dev/xxx read/write calls (see _timer_tick in AP_HAL_PX4/RCOutput.cpp)
-
-Please talk to the ardupilot development team on the drones-discuss mailing list if you are not sure which mechanism to use for new code.
