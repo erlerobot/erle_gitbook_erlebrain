@@ -19,7 +19,7 @@ The vehicle directories are the top level directories that define the firmware f
 Let's see how ArduPilot is organized within Erle-Brain. In order to do so, first you need to connect via `ssh`. Follow the next steps:
 
 * Turn on Erle-Brain
-* Connect to its WiFi`
+* Connect to its WiFi
 * Open a terminal session and type:  `ssh root@11.0.0.1`
 * Move to ArduPilot folder: `cd ardupilot`
 * List the content: `ls -l`
@@ -28,9 +28,7 @@ Let's see how ArduPilot is organized within Erle-Brain. In order to do so, first
 
 ###AP_HAL
 
-The AP_HAL layer (Hardware Abstraction Layer) is how we make ArduPilot portable to lots of different platforms. There is a top level AP_HAL in libraries/AP_HAL that defines the interface that the rest of the code has to specific board features, then there is a AP_HAL_XXX subdirectory for each board type, for example AP_HAL_AVR for AVR based boards, AP_HAL_PX4 for PX4 boards and AP_HAL_Linux for Linux based boards.
-
-The Erle-Brain is a Linux based board, therefore, device portability it is made in this level. 
+The `AP_HAL` layer (Hardware Abstraction Layer) is how we make ArduPilot portable to lots of different platforms. There is a top level `AP_HAL` in [libraries/AP_HAL](https://github.com/erlerobot/ardupilot/tree/master/libraries/AP_HAL) that defines the interface that the rest of the code has to specific board features, then there is a `AP_HAL_XXX subdirectory for each board type. Erle-Brain, as is a Linux based board, uses [AP_HAL_Linux](https://github.com/erlerobot/ardupilot/tree/master/libraries/AP_HAL_Linux).
 
 Let's see how is distributed this `libraries` folder. Assuming you are already connected into Erle-Brain:
 
@@ -45,7 +43,7 @@ You will notice that there are some extra folders. Don't worry about those ones 
 
 ###Tools directories
 
-The tools directories are miscellaneous support directories. For examples, tools/autotest provides the autotest infrastructure behind the autotest.diydrones.com site and tools/Replay provides our log replay utility.
+The tools directories are miscellaneous support directories. For examples, `tools/autotest` provides the autotest infrastructure behind the autotest.diydrones.com site and `tools/Replay provides our log replay utility.
 
 ###External support code
 
@@ -61,7 +59,7 @@ On some platforms we need external support code to provide additional features o
 
 The build system is based around make, but also supports the old arduino IDE for AVR builds. The makefiles are in the mk/ directory, and define build rules for each type of supported board.
 
-To build a vehicle or other ‘sketch’ for a particular board target you would type “make TARGET”, where TARGET is the board type. In order to build the code for Erle-Brain, you should type:
+To build a vehicle or other ‘sketch’ for a particular board target you would type `make TARGET`, where TARGET is the board type. In order to build the code for Erle-Brain, you should type:
 
     make pxf 
 
