@@ -11,8 +11,8 @@ If you think some important information is missing or could be improved then ple
 
 * [Introduction and code structure](learning_ardupilot.md)
 * [The Example Sketches](ardupilot_examples.md)
-* [ArduPilot threading]()
-* [UARTs and the console]()
+* [ArduPilot threading](threading.md)
+* [UARTs and the console](uart_console.md)
 * [RCInput and RCOutput]()
 * [Storage and EEPROM management]()
 * [ The vehicle code]()
