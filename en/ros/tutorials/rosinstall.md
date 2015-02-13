@@ -217,7 +217,9 @@ Now you have to reboot.
 
 ##### ROS for Snappy
 
+
 ### Sources:
 - [Installing Hydro in Debian](http://wiki.ros.org/hydro/Installation/Debian)
 - [Installing Groovy in Debian](http://wiki.ros.org/groovy/Installation/Debian)
 - [catkin_make_isolated](http://www.ros.org/reps/rep-0134.html)
+- [ROS for snappy snap](http://www.piware.de/2015/01/snappy-package-for-robot-operating-system-tutorial/)
