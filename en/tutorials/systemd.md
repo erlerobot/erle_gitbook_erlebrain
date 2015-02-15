@@ -42,8 +42,17 @@ systemd-analyze blame
 ```
 
 ### A simple example
-
-
+First create the script that will be launched by the service:
+``` bash
+touch test-script.sh
+touch test
+```
+```bash
+cat << _EOF_ > test-script.sh
+#!/bin/bash
+echo "test: $(date)" >> /home/ubuntu/test
+_EOF_
+```
 
 ### Sources
 - [Docs & info](http://www.freedesktop.org/wiki/Software/systemd/)
