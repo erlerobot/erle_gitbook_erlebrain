@@ -1,3 +1,11 @@
 # Systemd
 
-For administrators systemd provides a variety of new features and changes and enhances the administrative process substantially. This blog story is the first part of a series of articles I plan to post roughly every week for the next months. In every post I will try to explain one new feature of systemd. Many of these features are small and simple, so these stories should be interesting to a broader audience. However, from time to time we'll dive a little bit deeper into the great new features systemd provides you with.
+>systemd is a system and service manager for Linux, compatible with SysV and LSB init scripts. systemd provides aggressive parallelization capabilities, uses socket and D-Bus activation for starting services, offers on-demand starting of daemons, keeps track of processes using Linux control groups, supports snapshotting and restoring of the system state, maintains mount and automount points and implements an elaborate transactional dependency-based service control logic.
+>
+> https://wiki.archlinux.org/index.php/Systemd
+
+With `systemd` we have a `/etc/systemd/system/` directory chock-full of symlinks to files in `/lib/systemd/system/`. `/lib/systemd/system/` contains init scripts; to start a service at boot it must be linked to `/etc/systemd/system/`. The `systemctl` command does this for you when you enable a new service.
+
+
+### Sources
+- [Docs & info](http://www.freedesktop.org/wiki/Software/systemd/)
