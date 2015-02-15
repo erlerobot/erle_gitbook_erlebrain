@@ -1,5 +1,9 @@
 # Ubuntu Snappy Core
 
+[Snappy Ubuntu Core](https://developer.ubuntu.com/en/snappy/)  is a new rendition of Ubuntu with transactional updates - a minimal server image with the same libraries as today’s Ubuntu, but applications are provided through a simpler mechanism. The snappy approach is faster, more reliable, and lets us provide stronger security guarantees for `apps` and users.
+
+Through Snappy, Canonical has [partnered with Erle Robotics](http://www.ubuntu.com/things) to bring Ubuntu and the app store to the world of robotics.
+
 ### Getting the Ubuntu kernel
 #### 3.16 (latest)
 ```bash
