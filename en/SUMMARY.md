@@ -76,6 +76,7 @@
        * [UART and Console](tutorials/autopilot_tutorial/uart_console.md)
        * [RC input and output](tutorials/autopilot_tutorial/rc.md)
        * [Storage and EEPROM management](tutorials/autopilot_tutorial/storage.md)
+   * systemd
 * [Contact information](contact_information/README.md)
 * [Legal note](legal_note/README.md)
 
