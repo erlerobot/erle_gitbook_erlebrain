@@ -4,10 +4,28 @@
 >
 > https://wiki.archlinux.org/index.php/Systemd
 
-With `systemd` we have a `/etc/systemd/system/` directory chock-full of symlinks to files in `/lib/systemd/system/`. `/lib/systemd/system/` contains init scripts; to start a service at boot it must be linked to `/etc/systemd/system/`. The `systemctl` command does this for you when you enable a new service.
 
 ### A crash course
 
+![](http://www.linux.com/images/stories/41373/Systemd-components.png)
+
+With `systemd` we have a `/etc/systemd/system/` directory chock-full of symlinks to files in `/lib/systemd/system/`. `/lib/systemd/system/` contains init scripts; to start a service at boot it must be linked to `/etc/systemd/system/`. The `systemctl` command does this for you when you enable a new service.
+
+
+### Cheatsheet
+```bash
+# systemctl start [name.service]
+# systemctl stop [name.service]
+# systemctl restart [name.service]
+# systemctl reload [name.service]
+# systemctl status [name.service]
+# systemctl is-active [name.service]
+# systemctl list-units --type service --all
+# systemctl enable ntpd.service
+# systemctl disable ntpd.service
+```
+
+### Useful stuff:
 Check the services
 ```bash
 systemctl
@@ -18,6 +36,14 @@ Check the services that failed
 systemctl --failed
 ```
 
+Check how much time each service takes:
+```bash
+systemd-analyze blame
+```
+
+### A simple example
 
 ### Sources
 - [Docs & info](http://www.freedesktop.org/wiki/Software/systemd/)
+- [Understanding and Using Systemd](http://www.linux.com/learn/tutorials/788613-understanding-and-using-systemd)
+- efsdf
