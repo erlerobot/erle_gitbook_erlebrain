@@ -6,6 +6,18 @@
 
 With `systemd` we have a `/etc/systemd/system/` directory chock-full of symlinks to files in `/lib/systemd/system/`. `/lib/systemd/system/` contains init scripts; to start a service at boot it must be linked to `/etc/systemd/system/`. The `systemctl` command does this for you when you enable a new service.
 
+### A crash course
+
+Check the services
+```bash
+systemctl
+```
+
+Check the services that failed
+```bash
+systemctl --failed
+```
+
 
 ### Sources
 - [Docs & info](http://www.freedesktop.org/wiki/Software/systemd/)
