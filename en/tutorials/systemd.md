@@ -54,6 +54,30 @@ echo "test: $(date)" >> /home/ubuntu/test
 _EOF_
 ```
 
+Now we create the service file:
+```bash
+cat << _EOF_ > /lib/systemd/system/test.service
+[Unit]
+Description=A test service for demo purposes
+
+[Service]
+Type=oneshot
+ExecStart=/home/ubuntu/test-script.sh
+
+[Install]
+WantedBy=multi-user.target
+_EOF_
+```
+
+We test that the service works:
+```bash
+systemctl start test.service
+```
+Finally we enable the service so that it starts at boot time
+```bash
+systemctl enable test.service
+```
+
 ### Sources
 - [Docs & info](http://www.freedesktop.org/wiki/Software/systemd/)
 - [Understanding and Using Systemd](http://www.linux.com/learn/tutorials/788613-understanding-and-using-systemd)
