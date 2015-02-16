@@ -23,6 +23,7 @@
        * [GPS](hardware/gps.md)
        * [Buzzer](hardware/buzzer.md)
        * [Dongles](hardware/dongles.md)
+   * [Hardware SetUp](hardware/setup/README.md)
 * [Software](software/software.md)
    * [Quick start](software/quick.md)
    * [Updating the sofware](software/update.md)
