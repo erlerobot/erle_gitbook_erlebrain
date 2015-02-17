@@ -6,7 +6,6 @@
    * [Anti-vibration system](vibration.md)
    * [Specifications](specifications/README.md)
    * [References](references/README.md)
-* Store
 * [Erle-Brain](hardware/erle-brain.md)
    * Store
    * [Technology Description](hardware/hardware.md)
@@ -18,6 +17,7 @@
        * [EEPROM](hardware/EEPROM.md)
        * [ADC](hardware/adc.md)
        * [I/O](hardware/IO.md)
+       * Store
        * [Sensors](hardware/sensors.md)
        * [Hardware Map](hardware/HardwareMap.md)
    * [Complementary Devices](hardware/additional-hardware.md)
