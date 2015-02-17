@@ -43,7 +43,7 @@
    * [Links Ardupilot](software/ardupilot/links.md)
    * Miscellaneous
        * [systemd](software/systemd.md)
-* Store
+* [Store](software/store.md)
 * [Vehicles](vehicles/README.md)
    * [Copter](vehicles/copter/README.md)
        * [Connections](vehicles/copter/connections.md)
