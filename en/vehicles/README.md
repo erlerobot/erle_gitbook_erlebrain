@@ -4,11 +4,19 @@ The Erle-Brain can be integrated in different vehicles thanks to its modularity.
 
 This are the vehicles that we offer:
 
-- Erle-Copter
+- Erle-Copter:
 
-- Erle-Plane
+![copter](../img/copter.png)
 
-- Erle-Rover
+
+- Erle-Plane:
+
+![plane](../img/plane.jpg)
+
+
+- Erle-Rover:
+
+![rover](../img/rover.png)
 
 
 This vehicles are available from the [Erle Robotics store](https://erlerobotics.com/blog/product/vehicles)
