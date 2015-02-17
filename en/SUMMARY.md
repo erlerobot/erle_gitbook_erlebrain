@@ -7,7 +7,6 @@
    * [Specifications](specifications/README.md)
    * [References](references/README.md)
 * [Erle-Brain](hardware/erle-brain.md)
-   * Store
    * [Technology Description](hardware/hardware.md)
        * [Processor](hardware/Processor.md)
        * [Memory](hardware/Memory.md)
@@ -21,6 +20,7 @@
        * [Sensors](hardware/sensors.md)
        * [Hardware Map](hardware/HardwareMap.md)
    * [Complementary Devices](hardware/additional-hardware.md)
+       * Store
        * [Power Module](hardware/power-module.md)
        * [GPS](hardware/gps.md)
        * [Buzzer](hardware/buzzer.md)
