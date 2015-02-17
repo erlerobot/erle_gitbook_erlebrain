@@ -6,6 +6,7 @@
    * [Anti-vibration system](vibration.md)
    * [Specifications](specifications/README.md)
    * [References](references/README.md)
+* Store
 * [Erle-Brain](hardware/erle-brain.md)
    * Store
    * [Technology Description](hardware/hardware.md)
