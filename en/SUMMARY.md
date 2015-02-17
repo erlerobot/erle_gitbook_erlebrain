@@ -20,7 +20,6 @@
        * [Sensors](hardware/sensors.md)
        * [Hardware Map](hardware/HardwareMap.md)
    * [Complementary Devices](hardware/additional-hardware.md)
-       * Store
        * [Power Module](hardware/power-module.md)
        * [GPS](hardware/gps.md)
        * [Buzzer](hardware/buzzer.md)
@@ -44,6 +43,7 @@
    * [Links Ardupilot](software/ardupilot/links.md)
    * Miscellaneous
        * [systemd](software/systemd.md)
+* Store
 * [Vehicles](vehicles/README.md)
    * [Copter](vehicles/copter/README.md)
        * [Connections](vehicles/copter/connections.md)
