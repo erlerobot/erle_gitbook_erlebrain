@@ -27,19 +27,27 @@ The radio control receiver must be connected in the channel 14 rail, as shown be
 ##Buzzer
 The buzzer must be connected into single two pins DF13 connector of ther Erle-Brain.
 
-##GPS
+##GPS + Compass
 As default, the GPS must be connected to the port *Serial*. This port will power up the device.
+The *I2C* bus is used to connect the compass to Erle-Brain.
+![GPS setup](../../img/hardwaresetup/GPSSetUp.png)
 
 ##I2C bus
 The Erle-Brain contains three *I2C* bus connectors, which gives access to the *I2C1* bus. In this bus you could connect lots of different sensor and devices, i.e.: compass, gas sensors, temperature sensors, ...
+![I2C setup](../../img/hardwaresetup/I2Csetup.png)
 
 ##Power
 Use this connector to feed Erle-Brain from the Power-Module.
+![Power setup](../../img/hardwaresetup/PowerSetup.png)
 
-##I/O
+##Other buses/ports
+
+![Others setup](../../img/hardwaresetup/OtherSetup.png)
+
+####I/O
 This connector allows to connect external hardware to two GPIOs. It also supplies with 3v3.
 
-##CAN
+####CAN
 Use this connector to access Erle-Brain CAN bus.
 
 ------------------------------------------------
@@ -47,7 +55,7 @@ Use this connector to access Erle-Brain CAN bus.
 
 ------------------------------------------------
 
-##ADC
+####ADC
 Erle-Brain also has a dedicated ADC bus, that contains two ADC channels. The connector also supplies 5 volts. 
 
 
