@@ -18,7 +18,6 @@
        * [I/O](hardware/IO.md)
        * Store
        * [Sensors](hardware/sensors.md)
-       * [Hardware Map](hardware/HardwareMap.md)
    * [Complementary Devices](hardware/additional-hardware.md)
        * [Power Module](hardware/power-module.md)
        * [GPS](hardware/gps.md)
