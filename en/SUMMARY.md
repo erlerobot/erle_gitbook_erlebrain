@@ -41,6 +41,7 @@
    * [ROS](ros/ROS.md)
        * [Concepts](ros/ROS-concepts.md)
        * [Technical Overview](ros/rostechnicaloverview.md)
+       * [Erle ROS packages](ros/ros_erle.md)
    * [MAVLink](mavlink/mavlink.md)
        * [mavlink in action](mavlink/mavlinkaction.md)
        * [ROS integration](mavlink/mavlinkros.md)
