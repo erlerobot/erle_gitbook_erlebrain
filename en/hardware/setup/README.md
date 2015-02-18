@@ -32,7 +32,7 @@ The buzzer must be connected into single two pins DF13 connector of ther Erle-Br
 As default, the GPS must be connected to the port *Serial*. This port will power up the device.
 The *I2C* bus is used to connect the compass to Erle-Brain.
 
-![GPS setup](../../img/hardwaresetup/GPSsetUp.png)
+![GPS setup](../../img/hardwaresetup/GPSsetup.png)
 
 ##I2C bus
 The Erle-Brain contains three *I2C* bus connectors, which gives access to the *I2C1* bus. In this bus you could connect lots of different sensor and devices, i.e.: compass, gas sensors, temperature sensors, ...
