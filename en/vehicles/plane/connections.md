@@ -4,3 +4,4 @@ In order to fly properly the plane, the connections between Erle-Brain and plane
 
 The next images shows how to do so:
 
+![PlaneConnections](../../img/conexiones_plane.png)
