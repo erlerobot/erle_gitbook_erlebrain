@@ -63,6 +63,7 @@
        * [Connections](vehicles/rover/connections.md)
 * [Ground Control Stations](GCS/README.md)    
    * [APM Planner 2.0](GCS/apmplanner.md)
+* [Radio Control](RC/README.md)
 * [Tutorials](tutorials/README.md)
    * [Peripherals](tutorials/peripherals.md)
        * [Blink a LED](tutorials/Blink.md)
