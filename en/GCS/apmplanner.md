@@ -32,5 +32,26 @@ Follow the next steps to connect:
 
 Now the connection should be established automatically. If is not clear enough, you can watch [this video](https://www.youtube.com/watch?feature=player_detailpage&v=pKJyeTF_Qbo#t=69)!
 
+###APM Planner basics
+
+#####Flight Data Display
+
+Thanks to the **primary flight display**, user can see the orientation of the drone and its inclination.
+
+![Display](../img/GCS/apm_primary_display.png)
+
+**Info View** subpanel contains a lot of useful information. In the first tab, you can see some basic parameters of your flight: the altitude, pitch, roll and yaw in degrees, ...
+
+![InfoView](../img/GCS/apm_infoview.png)
+
+In the **Action** tab, you can arm the drone, select the flight mode, send the the drone to a waypoints,...
+
+![Actions](../img/GCS/apm_action.png)
+
+In the **Messages* subtab you can read the messages sent using MAVlink. This messages are useful in order to know in which state is the autpilot.
+
+![Messages](../img/GCS/apm_messages.png)
+
+
 
 
