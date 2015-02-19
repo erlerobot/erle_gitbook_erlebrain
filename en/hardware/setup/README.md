@@ -36,15 +36,15 @@ The *I2C* bus is used to connect the compass to Erle-Brain.
 
 ##I2C bus
 The Erle-Brain contains three *I2C* bus connectors, which gives access to the *I2C1* bus. In this bus you could connect lots of different sensor and devices, i.e.: compass, gas sensors, temperature sensors, ...
-![I2C setup](../../img/hardwaresetup/I2Csetup.png)
+![I2C setup](../../../en/img/hardwaresetup/I2Csetup.png)
 
 ##Power
 Use this connector to feed Erle-Brain from the Power-Module.
-![Power setup](../../img/hardwaresetup/PowerSetup.png)
+![Power setup](../../../en/img/hardwaresetup/PowerSetup.png)
 
 ##Other buses/ports
 
-![Others setup](../../img/hardwaresetup/OtherSetup.png)
+![Others setup](../../../en/img/hardwaresetup/OtherSetup.png)
 
 ####I/O
 This connector allows to connect external hardware to two GPIOs. It also supplies with 3v3.
