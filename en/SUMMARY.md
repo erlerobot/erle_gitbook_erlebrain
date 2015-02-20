@@ -52,7 +52,6 @@
        * [PyMAVLink Tools](mavlink/pymavlink_tools.md) 
    * [Links Ardupilot](software/ardupilot/links.md)
    * Miscellaneous
-       * [systemd](software/systemd.md)
 * [Store](software/store.md)
 * [Vehicles](vehicles/README.md)
    * [Copter](vehicles/copter/README.md)

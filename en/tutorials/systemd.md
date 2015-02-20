@@ -78,6 +78,13 @@ Finally we enable the service so that it starts at boot time
 systemctl enable test.service
 ```
 
+```bash
+systemd-analyze plot > test.svg
+```
+produces something like:
+![](../img/erle-brain.svg)
+
+
 ### Sources
 - [Docs & info](http://www.freedesktop.org/wiki/Software/systemd/)
 - [Understanding and Using Systemd](http://www.linux.com/learn/tutorials/788613-understanding-and-using-systemd)
