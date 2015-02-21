@@ -19,6 +19,13 @@ The password for the network is **holaerle**.
 
 -----
 
+Then SSH into the board:
+```bash
+ssh root@11.0.0.2
+```
+
+(Windows users, try [PuTTY](http://www.putty.org/) to SSH into the board)
+
 ##### Through mini USB
 Erle-Brain supports client mode USB. Using this connection mechanism and the Ethernet-over-USB kernel module you should be able to SSH into the board.
 
