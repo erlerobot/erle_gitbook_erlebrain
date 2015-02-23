@@ -14,7 +14,7 @@ You can download APM Planner in the next links:
 
 ###Connecting to Erle-Brain/Vehicles
 
-Once you have installed the APM planner in your computer, the next step is to make connection between you computer and [Erle-Brain](http://erlerobotics.com/blog/erle-brain).
+Once you have installed the APM planner in your computer, the next step is to connect to [Erle-Brain](http://erlerobotics.com/blog/erle-brain).
 
 When you power up [Erle-Brain](http://erlerobotics.com/blog/erle-brain) or a vehicle/drone that contains this product, it automatically generates a WiFi spot and sets a telemetry port (11.0.0.2:6000) in order to exchange data with the GCS.
 
@@ -30,7 +30,7 @@ Follow the next steps to connect:
 * Click on **Connect**
 * Restart APM
 
-Now the connection should be established automatically. If is not clear enough, you can watch [this video](https://www.youtube.com/watch?feature=player_detailpage&v=pKJyeTF_Qbo#t=69)!
+Now the connection should be established automatically. If is not clear enough, check out [this video](https://www.youtube.com/watch?feature=player_detailpage&v=pKJyeTF_Qbo#t=69)!
 
 ###APM Planner basics
 
@@ -101,7 +101,46 @@ Once you have done this, simply move the switch of position and check which PWM 
 
 Note that the menu enables to configure six flight modes, but, normally, the RCs only have 2/3 position switch, which makes impossible to use all the flight modes. You could try to make an logic operation between two switches in your RC in order to achieve a six level logical mix.
 
+######Adding Simple Mode
 
+Simple mode allow the pilot to control the movement of the copter from the pilot’s point of view regardless of which way the copter is facing. This is useful for new pilots who have not mastered adjusting their roll and pitch inputs depending upon which way the vehicle is facing and for cases when the copter is far enough away that it’s heading is not apparent.
 
+* Simple mode is used in combination with the Stabilize, Sport, Drift and Land flight modes.
+* Simple Mode allows you to control the copter relative to the copters heading at take off and relies only on a good compass heading.
+* The mode can be assigned to a particular flight mode switch position or can be enabled/disabled from the Ch7/Ch8 switches.
+
+######Normal mode vs Simple mode
+
+![Normal](http://copter.ardupilot.com/wp-content/uploads/sites/2/2012/12/NormalControls-1024x688.png)
+
+Without Simple Mode enabled, the pilot’s transmitter stick inputs are applied in the orientation of the copter.  For example in the diagram above when the pilot applies roll input right (red) the vehicle rolls to it’s right.
+
+With the copter is facing in the same direction as the pilot, it is relatively easy to control the vehicle but when the vehicle is facing towards the pilot an inexperienced pilot will feel that the controls are all reversed.  I.e. if the pilot inputs right roll, the vehicle will move to the left from the pilot’s point of view.
+
+![Simple](http://copter.ardupilot.com/wp-content/uploads/sites/2/2012/12/SimpleModeControls-1024x766.png)
+
+Similar to the “care free” mode on other systems, this mode allows you to fly your copter as though it were pointed in the direction it was pointed when it was armed regardless of its current heading orientation.  So if you hold the pitch stick forward the copter will fly away from you, pull the pitch stick back and it will come back towards home.  You can even apply yaw to spin the copter in any direction but the movement of the copter’s position relative to the stick inputs will behave exactly as it did at take off.
+
+Generally when arming you should stand behind the vehicle with it’s nose pointing directly away from you.  While flying you should try to keep the vehicle flying in front of it’s starting position because if it flies behind you all the controls will feel reversed.
+
+As mentioned above simple mode is also very useful in emergency situations where the copter is far enough away that it is very difficult to determine it’s heading.
+
+######Configuring Simple Mode
+
+First of all, assign to RC's one switch *channel 7 or 8*. If you are using a *FlySky-TH9x* sold in Erle Robotics [store](https://erlerobotics.com/blog/tienda/):
+
+* Enter to *Setting -> AUX_CH*
+* Drop until Ch7/Ch8
+* Select the switch you would like, *GEAR* and *THRO HOLD* are the best candidates
+
+![RC_CONF](../img/GCS/rc_conf.png)
+
+Once configured the RC, launch APM Planner 2.0. Go to *Config/tuning* menu and select *extended Tuning* submenu. Once there, select *Simple mode* from the channel you have configured in the RC. In this case, channel 8:
+
+![APM simple](../img/GCS/simple_mode.png)
+
+Click on *Write Params* box. 
+
+[Here](https://www.youtube.com/watch?v=JBKhGYKU_Z0) you can see a little example of how it works.
 
 
