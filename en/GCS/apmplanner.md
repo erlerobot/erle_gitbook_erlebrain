@@ -4,6 +4,21 @@
 
 ![APM planner logo](../img/GCS/apm_planner_logo.png)
 
+######Content
+
+* [Installation](#installation)
+* [Connecting to Erle-Brain/Vehicles](#connecting-to-erle-brain)
+* [APM Planner basics](#apm-planner-basics)
+	* [Flight Data Display](#flight-data-display)
+	* [Initial Setup](#initial-setup)
+	* [External Compass](#external-compass)
+	* [IMU calibration](#imu-calibration)
+	* [Radio Calibration](#radio-calibration)
+	* [Flight Modes](#flight-modes)
+* [Adding Simple Mode](#adding-simple-mode) 
+	* [Normal mode vs Simple mode](#normal-mode-vs-simple-mode)
+	* [Configuring Simple Mode](#configuring-simple-mode)
+
 ###Installation
 
 You can download APM Planner in the next links:
@@ -12,7 +27,7 @@ You can download APM Planner in the next links:
 * [Windows](http://planner2.ardupilot.com/wiki/install-windows/)
 * [Mac](http://planner2.ardupilot.com/wiki/mac-install/)
 
-###Connecting to Erle-Brain/Vehicles
+###Connecting to Erle-Brain
 
 Once you have installed the APM planner in your computer, the next step is to connect to [Erle-Brain](http://erlerobotics.com/blog/erle-brain).
 
@@ -101,7 +116,7 @@ Once you have done this, simply move the switch of position and check which PWM 
 
 Note that the menu enables to configure six flight modes, but, normally, the RCs only have 2/3 position switch, which makes impossible to use all the flight modes. You could try to make an logic operation between two switches in your RC in order to achieve a six level logical mix.
 
-######Adding Simple Mode
+###Adding Simple Mode
 
 Simple mode allow the pilot to control the movement of the copter from the pilot’s point of view regardless of which way the copter is facing. This is useful for new pilots who have not mastered adjusting their roll and pitch inputs depending upon which way the vehicle is facing and for cases when the copter is far enough away that it’s heading is not apparent.
 

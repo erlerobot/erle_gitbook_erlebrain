@@ -30,12 +30,20 @@ This are some specifications of the RC:
 * Power: 12V DC(1.5AA*8)
 * Weight: 690g
 
+This are the different control/switches installed in the RC:
+
+![TH9x controls](../img/flysky_th9x.png)
+
 ###Setting GEAR switch for flight modes
 
-GEAR switch can be easily configurated to have *two* flight modes in the RC. If you would like to change to more modes, use a GCS to do so.
+GEAR switch can be easily configurated to have *two* flight modes in the RC. If you would like to change to modes not included in your RC, use a GCS.
 
-[Here](https://www.youtube.com/watch?v=mL3DkoXRT_I&feature=youtu.be) you can find a tutorial about how to configure the RC and the drone properly.
+[Here](https://www.youtube.com/watch?v=mL3DkoXRT_I&feature=youtu.be) you can find a tutorial about how to configure the TH9x GEAR switch and the drone properly, in order to have this two modes mentioned above.
 
 ### Setting 3-way switch for flight modes
 
 Check [this video](https://www.youtube.com/watch?v=6n_5wNA2jTI) to make a 3-way switch the flight mode selector. Notice that you will need and 8 channel output receiver and a 8 to 1 channel PPM sum.
+
+### Setting Simple flight mode
+
+Check [this](http://erlerobotics.gitbooks.io/erle-robotics-erle-brain-a-linux-brain-for-drones/content/en/GCS/apmplanner.html#configuring-simple-mode) page in order to configure the RC and the drone to use this mode.
