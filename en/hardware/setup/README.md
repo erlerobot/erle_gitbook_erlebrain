@@ -13,9 +13,13 @@ The image below, shows the most common hardware attached to Erle-Brain:
 
 
 ##PWM out
-The Erle-Brain has 13 channel of PWM output. In this channels, the most typical devices that you could connect are: ESCs, servos, gimbal servos,...
+The Erle-Brain has 10 channel of PWM output. In this channels, the most typical devices that you could connect are: ESCs, servos, gimbal servos,...
 
 The next image show which are the PWM channels:
+
+![PWM setup](../../img/hardwaresetup/PWM_setup.png)
+
+The top row provides the PWM signal, the center 5v and the bottom is the GND signal. Make sure you plug the device connector in the right way.
 
 ![PWM setup](../../img/hardwaresetup/PWMsetup.png)
 
