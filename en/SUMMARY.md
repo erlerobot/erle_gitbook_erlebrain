@@ -53,6 +53,8 @@
    * [Links Ardupilot](software/ardupilot/links.md)
    * Miscellaneous
 * [Store](software/store.md)
+   * [Snappy Ubuntu Core](store/snappy-ubuntu-core.md)
+   * [Creating a drone app](store/firstapp.md)
 * [Vehicles](vehicles/README.md)
    * [Copter](vehicles/copter/README.md)
        * [Connections](vehicles/copter/connections.md)
