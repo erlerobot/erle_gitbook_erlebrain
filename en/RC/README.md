@@ -1,6 +1,6 @@
 #Radio Control
 
-Radio Control has been widely use by hobbysts to control vehicles. Nowadays, even using hyghly complex autopilot in drones and a lot of different hardware, the use of RC is still a must, for security reasons.
+Radio Control has been widely use by hobbyists to control vehicles. Nowadays, even using highly complex autopilot in drones and a lot of different hardware, the use of RC is still a must, for security reasons.
 
 
 You can make autonomous flights but is a lot of fun to control yourself the drone! Apart from controlling the drone, a RC enables to do more thins, like:
