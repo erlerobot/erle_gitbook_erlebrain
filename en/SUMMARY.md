@@ -16,8 +16,8 @@
        * [EEPROM](hardware/EEPROM.md)
        * [ADC](hardware/adc.md)
        * [I/O](hardware/IO.md)
-       * Store
        * [Sensors](hardware/sensors.md)
+   * [Radio Control](RC/README.md)
    * [Complementary Devices](hardware/additional-hardware.md)
        * [Power Module](hardware/power-module.md)
        * [GPS](hardware/gps.md)
@@ -64,7 +64,7 @@
        * [Connections](vehicles/rover/connections.md)
 * [Ground Control Stations](GCS/README.md)    
    * [APM Planner 2.0](GCS/apmplanner.md)
-* [Radio Control](RC/README.md)
+* [Safety](safety/README.md)    
 * [Tutorials](tutorials/README.md)
    * [Peripherals](tutorials/peripherals.md)
        * [Blink a LED](tutorials/Blink.md)
