@@ -69,3 +69,10 @@ Erle-Brain also has a dedicated ADC bus, that contains two ADC channels. The con
 *Warning*: The range of input of the ADCs are 0~1.8v. Do not connect any voltage that exceeds this voltage.
 
 --------
+
+
+----
+
+[Discussion](http://forum.erlerobotics.com/t/missing-doc-on-erle-brain/125) on some undocumented ports.
+
+----
