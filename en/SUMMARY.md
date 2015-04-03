@@ -57,6 +57,7 @@
    * Miscellaneous
 * [Store](software/store.md)
    * [Snappy Ubuntu Core](store/snappy-ubuntu-core.md)
+   * [Installing an app](store/appinstall.md)
    * [Creating a drone app](store/firstapp.md)
 * [Vehicles](vehicles/README.md)
    * [Copter](vehicles/copter/README.md)
