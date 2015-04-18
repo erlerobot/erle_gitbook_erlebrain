@@ -21,7 +21,7 @@ The password for the network is **holaerle**.
 
 Then SSH into the board:
 ```bash
-ssh root@11.0.0.2
+ssh root@11.0.0.1
 ```
 
 (Windows users, try [PuTTY](http://www.putty.org/) to SSH into the board)
