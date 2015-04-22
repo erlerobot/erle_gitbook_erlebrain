@@ -8,30 +8,13 @@ This are the vehicles that we offer:
 
 ![copter](../img/copter.png)
 
-
 - Erle-Plane:
 
 ![plane](../img/plane.jpg)
 
-
 - Erle-Rover:
 
 ![rover](../img/rover.png)
-=======
-- Erle-Rover:
-
-![rover](../img/rover.png)
-
->>>>>>> vehiclesbranch
-
-- Erle-Copter:
-
-![copter](../img/copter.png)
-
-
-- Erle-Plane:
-
-![plane](../img/plane.jpg)
 
 
 This vehicles are available from the [Erle Robotics store](http://erlerobotics.com/blog/product-category/vehicles/)

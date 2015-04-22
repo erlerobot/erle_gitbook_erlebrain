@@ -4,4 +4,3 @@ In order to road properly the rover, the connections between Erle-Brain and rove
 
 The next images shows how to do so:
 
-(no image available)
