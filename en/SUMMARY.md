@@ -1,12 +1,11 @@
 # Summary
 
 * [Introduction](README.md)
+* [Erle-Brain](hardware/erle-brain.md)
    * [BeagleBone Black](bbb.md)
    * [PixHawk Fire cape](pxf.md)
    * [Anti-vibration system](vibration.md)
    * [Specifications](specifications/README.md)
-   * [References](references/README.md)
-* [Erle-Brain](hardware/erle-brain.md)
    * [Technology Description](hardware/hardware.md)
        * [Processor](hardware/Processor.md)
        * [Memory](hardware/Memory.md)
@@ -54,7 +53,6 @@
        * [Creating a MAVLink message](mavlink/creating_a_mavlink_message.md)
        * [PyMAVLink Tools](mavlink/pymavlink_tools.md) 
    * [Links Ardupilot](software/ardupilot/links.md)
-   * Miscellaneous
 * [Store](software/store.md)
    * [Snappy Ubuntu Core](store/snappy-ubuntu-core.md)
    * [Installing an app](store/appinstall.md)
