@@ -22,5 +22,5 @@ Nowadays, this control stations could be used in different platforms: computers,
 
 In this section, we will explain the basics of the next GCSs:
 
-* APM Planner 2.0
+* [APM Planner 2.0](apmplanner.html)
 * DroidPlanner (Comming soon)
