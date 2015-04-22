@@ -2,8 +2,6 @@
 
 ### Electrical specifications
 
-![](https://erlerobotics.com/blog/wp-content/uploads/2014/12/IMG_6334.jpg)
-
 |  |  |
 |---------------|------------------|
 | **Power supply** | 5V supply|
