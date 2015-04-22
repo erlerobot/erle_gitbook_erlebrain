@@ -21,5 +21,5 @@ Hoy en día, estas estaciones de control se pueden usar en diferentes plataforma
 
 En ésta sección, explicaremos los tópicos básicos de los siguientes GCSs:
 
-* APM Planner 2.0
+* [APM Planner 2.0](http://planner2.ardupilot.com/)
 * DroidPlanner (Próximamente)
