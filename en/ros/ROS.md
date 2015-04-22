@@ -50,8 +50,9 @@ The following distributions have been tested in the robot [Erle-Brain](http://er
 
 | Distro | Release date | Poster | Instuctions |
 |--------|--------------|--------|-------------|
+| [ROS Indigo Igloo](http://wiki.ros.org/hydro) | July 22, 2014 | ![indigo](../img/ros/indigoigloo.png) | [Installation](http://wiki.ros.org/indigo/Installation/UbuntuARM) |
 | [ROS Hydro Medusa](http://wiki.ros.org/hydro) | September 4th, 2013 | ![medusa](../img/ros/hydro.png) | [Installation](http://wiki.ros.org/hydro/Installation/UbuntuARM) |
-| [ROS Groovy Galapagos](http://wiki.ros.org/groovy) | December 31, 2012 | ![medusa](../img/ros/galapagos.jpg) | [Installation](http://wiki.ros.org/groovy/Installation/UbuntuARM) |
+| [ROS Groovy Galapagos](http://wiki.ros.org/groovy) | December 31, 2012 | ![galapagos](../img/ros/galapagos.jpg) | [Installation](http://wiki.ros.org/groovy/Installation/UbuntuARM) |
 
 
 License
