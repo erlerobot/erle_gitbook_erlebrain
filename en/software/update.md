@@ -14,11 +14,24 @@ sudo apt-get install gawk gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf
 git clone http://github.com/erlerobot/ardupilot
 ```
 
-##### Compiling the code
+##### Compiling the code for quadcopter
 ````bash
 cd ardupilot/ArduCopter
 make configure
 make pxf
+```
+
+##### Build for hexacopter:
+````bash
+cd ardupilot/ArduCopter
+make configure
+make pxf-hexa
+```
+
+To build for other frame types replace hexa with one of the following options:
+
+````bash
+quad tri hexa y6 octa octa-quad heli single obc nologging
 ```
 
 The code binaries should be deployed under `/tmp` so copy the binary into `/root` (or modify `/etc/init.d/apm4-startup.sh` and point to the binary you wish).
