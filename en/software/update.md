@@ -88,9 +88,17 @@ We also provide the option of booting directly from
 a microSD card. To do so, fetch the bootable microSD card image and 
 put it into a microSD card. 
 
+#### Debian
+
 | Image | Date | Size | Description | md5 |
 | ----------|--------|-------|------|----|
 |[erle-debian-bootable-4-2-15.img.gz](https://drive.google.com/file/d/0B6D4e4nVvowdLWp0QVVIckpGUEU/view)| 8-2-2015 | 1.4 GB | Debian, ROS Hydro, mavros (launched at init), WiFi (required from the APM binary) | |
+
+
+#### Snappy Ubuntu Core
+
+| Image | Date | Size | Description | md5 |
+| ----------|--------|-------|------|----|
 | [erle-snappy-3-3-15.img.gz](https://mega.co.nz/#!SEdWGQII!8g8-vZqh1H0drqlVQXvIX1HYcOTarp1QR0jAfm6HsPo) | 3-3-15 | 1.47 GB | Snappy Ubuntu Core for [Erle-Brain](erlerobotics.com/blog/product/erle-brain), includes APM ("apm" service), ROS Indigo preinstalled and launched at init ("ros" service), mavros presintalled (available for superuser) | |
 |[erle-snappy-17-3-15.img.gz](https://mega.co.nz/#!fBMzAYgI!9GTMQEAbokBlVMSzhkbdj_C2WJtmK5dkmS9Mp8j1Wpc) | 17-3-15 | 1.51 GB | Snappy Ubuntu Core for [Erle-Brain](erlerobotics.com/blog/product/erle-brain), includes APM ("apm" service), ROS Indigo preinstalled and launched at init ("ros" service), mavros presintalled (available for superuser), ROS packages preinstalled as well, APM:Plane and APM:Copter apps installed (only copter running by default)  | |
 |[erle-snappy-25-3-15.img.gz](https://mega.co.nz/#!uckwnSqT!f_UBsgstZXjnq2cck3M3X9qHRoD2dQbtIq1Ykp8RLFo) | 25-3-15 | 1.51 GB | Snappy Ubuntu Core for [Erle-Brain](erlerobotics.com/blog/product/erle-brain) (ROS, and some nodes launched at init)  | |
