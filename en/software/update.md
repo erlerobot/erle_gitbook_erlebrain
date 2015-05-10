@@ -42,9 +42,10 @@ Generally, updating the autopilot will be enough but if you mess things up we ar
 
 ### Reflashing everything on the eMMC
 
-| Image | Date | Size | Description |
-| ----------|--------|-------|------|
-|[erle-debian-8-1-15.img.gz](https://mega.co.nz/#!vY8GzTTQ!pRdmdNJd1-rqdSDliD8SgKuHRrTFV_NRpxtF7p34Fhw)| 8-1-2015 | 1.34 GB | Debian, ROS Hydro (not launched at init), mavros (not launched at init), WiFi (required from the APM binary) |
+| Image | Date | Size | Description | MD5 |
+| ----------|--------|-------|------|------|
+|[erle-debian-8-1-15.img.gz](https://mega.co.nz/#!vY8GzTTQ!pRdmdNJd1-rqdSDliD8SgKuHRrTFV_NRpxtF7p34Fhw)| 8-1-2015 | 1.34 GB | Debian, ROS Hydro (not launched at init), mavros (not launched at init), WiFi (required from the APM binary) | |
+|[erle-debian-flash-25-4-15.img.gz](https://mega.co.nz/#!SB8hDDTJ!Lfh5OHo5dE_EVQh9fI75Z0aisI9FqAAgNxwBd9N9y7k)| 25-4-2015 | 969.3 MB | **microSD card flashing Debian**, ROS indigo (launched at init) and mavros (launched at init, bridged: wifi, usb and telemetry) | 6a124cb01de866dfd276a09f3c237471 |
 
 
 Download the image and the copy it into a `>8GB microSD card`:
@@ -93,6 +94,7 @@ put it into a microSD card.
 | Image | Date | Size | Description | md5 |
 | ----------|--------|-------|------|----|
 |[erle-debian-bootable-4-2-15.img.gz](https://drive.google.com/file/d/0B6D4e4nVvowdLWp0QVVIckpGUEU/view)| 8-2-2015 | 1.4 GB | Debian, ROS Hydro, mavros (launched at init), WiFi (required from the APM binary) | |
+|[erle-debian-25-4-15.img.gz](https://mega.co.nz/#!6EcDRTZI!y-msWeHYUsTtWdLTYcq8XNIs2BWlpc8sFK5SiOB5Zlg)| 25-4-2015 | 964.9 MB | **microSD card bootable Debian**, ROS indigo (launched at init) and mavros (launched at init, bridged: wifi, usb and telemetry) | 36ae6a7853eff55da9e6eec39a36132a |
 
 
 #### Snappy Ubuntu Core
