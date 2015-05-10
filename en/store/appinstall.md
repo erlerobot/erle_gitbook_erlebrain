@@ -1,6 +1,6 @@
 # Installing an app (snap)
 
-Installing apps (aka **snaps**) with Snappy is super easy, just put any of the IP addresses of the device in your browser and port `4200` (e.g.: `http://192.168.7.2:6000`):
+Installing apps (aka **snaps**) with Snappy is super easy, just put any of the IP addresses of the device in your browser and port `4200` (e.g.: `http://192.168.7.2:4200`):
 
 ![](../img/snappy1.png)
 
