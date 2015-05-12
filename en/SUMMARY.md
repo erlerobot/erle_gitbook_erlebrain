@@ -30,6 +30,7 @@
    * [Quick start](software/quick.md)
    * [Updating the sofware](software/update.md)
        * [From source](software/ardupilot/installing.md)
+   * [Back-up Erle-Brain](software/backup.md)
    * [Operating System](software/os.md)
        * [Ubuntu Snappy Core](software/snappy.md)
    * [Autopilot](software/apm.md)
