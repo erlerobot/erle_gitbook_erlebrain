@@ -107,6 +107,7 @@ put it into a microSD card.
 |[erle-snappy-24-4-15.img.gz](https://mega.co.nz/#!aIsHGSwI!dcEqxmGyO-ZpEIsziyrdkAI2DFK8yjNZ1nXZMivf6wU) | 24-4-15 | 1.62 GB | Snappy Ubuntu Core for [Erle-Brain](erlerobotics.com/blog/product/erle-brain) (ROS, and bridges launched at init)  | |
 |[erle-snappy-30-4-2015.img.gz](https://mega.co.nz/#!LMNUTABC!tkO2noZaJJuilEwLZknCgnIl7xHhC6zZLLAD4tVlJKs)| 30-4-2015 | 1.62 GB | **microSD card Snappy image**, ROS Indigo (launched at init), mavros (launched at init, bridged: wifi, usb and telemetry), initrd.img fixed | 340d5546880f881356ba4df917603823 |
 |[erle-snappy-18-5-2015.img.gz](https://mega.co.nz/#!bNFiFCzY!r06g96-mYsllv7CKcDPIJppPiLWwaElqTCxkNkgyIA8)| 18-5-2015 | 1.9 GB | **microSD card Snappy image**, ROS Indigo (launched at init), mavros (launched at init, bridged: wifi, usb and telemetry), initrd.img fixed, chroot | 74e2485627cdd5e385fa1366336df26cd972fb0d |
+|[erle-snappy-15-06-2015.img.gz](https://mega.co.nz/#!mVEkgKyT!UPVdSES_JUFaJdN81dmMUaOpPhDSVDDF6HL3O3UiKoY)| 15-06-2015 | 2.15 GB | **microSD card Snappy image**, ROS Indigo (launched at init), mavros (launched at init, bridged: wifi, usb and telemetry), initrd.img fixed, chroot, ROS installed in chroot and chroot.sh script added | 94ffb382df8c262a8dd639168e540b0c |
 
 
 Place it on Erle-Brain and start playing with it :). Customizations can be made editing `/etc/init.d/apm4-startup.sh`.
