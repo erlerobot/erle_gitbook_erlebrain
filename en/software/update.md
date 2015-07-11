@@ -45,7 +45,6 @@ Generally, updating the autopilot will be enough but if you mess things up we ar
 | Image | Date | Size | Description | MD5 |
 | ----------|--------|-------|------|------|
 |[erle-debian-8-1-15.img.gz](https://mega.co.nz/#!vY8GzTTQ!pRdmdNJd1-rqdSDliD8SgKuHRrTFV_NRpxtF7p34Fhw)| 8-1-2015 | 1.34 GB | Debian, ROS Hydro (not launched at init), mavros (not launched at init), WiFi (required from the APM binary) | |
-|[erle-debian-flash-25-4-15.img.gz](https://mega.co.nz/#!SB8hDDTJ!Lfh5OHo5dE_EVQh9fI75Z0aisI9FqAAgNxwBd9N9y7k)| 25-4-2015 | 969.3 MB | **microSD card flashing Debian**, ROS indigo (launched at init) and mavros (launched at init, bridged: wifi, usb and telemetry) | 6a124cb01de866dfd276a09f3c237471 |
 
 
 Download the image and the copy it into a `>8GB microSD card`:
