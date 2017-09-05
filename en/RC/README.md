@@ -1,4 +1,4 @@
-#Radio Control
+# Radio Control
 
 Radio Control has been widely use by hobbyists to control vehicles. Nowadays, even using highly complex autopilot in drones and a lot of different hardware, the use of RC is still a must, for security reasons.
 
@@ -34,7 +34,7 @@ This are the different control/switches installed in the RC:
 
 ![TH9x controls](../img/flysky_th9x.png)
 
-###Setting GEAR switch for flight modes
+### Setting GEAR switch for flight modes
 
 GEAR switch can be easily configurated to have *two* flight modes in the RC. If you would like to change to modes not included in your RC, use a GCS.
 
